@@ -1,0 +1,4693 @@
+[
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$8ZFL2gm8dE9cJWibkrgKdw$OLjCY8p81YglZPy89g70Z3emtYaWGcpe3bl19igckVQ=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:45.780Z",
+    "phone": "+998900000000",
+    "phone_verified": true,
+    "role": "ADMIN",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$r0D9RsBtHQmSVLKUIPdSGv$kFR5MH5Ctzk9eNzuUNzOE/p7+zA+na2iv26nbp1E/Jo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz1",
+    "first_name": "Aziz",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:46.618Z",
+    "phone": "+998901000000",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$GR3gUJIBOpJtrVCLyPesOq$IKb3u/FXvWqZVRysZBIhDojLu5tnIoT6nD9J2FdGqPg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz2",
+    "first_name": "Malika",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:47.427Z",
+    "phone": "+998901000001",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$a3QsFql3W7JFT12wBpQZiX$6wFdx3SIxoEAk07NPIkwexESFroNHdMoTCLUvXQqknY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz3",
+    "first_name": "Rustam",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:48.248Z",
+    "phone": "+998901000002",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$pybpjeKRHvaQasyr3314sU$ivW8tMQOIxdhJLMuoVu78LfInBTbDcdukkVOfUnK4Tc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz4",
+    "first_name": "Dilnoza",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:49.103Z",
+    "phone": "+998901000003",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$cJmhWBmkFjZNtyQ6cj9cVR$Tu3FNbM3uVdMNmbMBLlZg/YGsfJta7yjVQBbaWc6TaU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz5",
+    "first_name": "Jahongir",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:49.925Z",
+    "phone": "+998901000004",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$Pom5PN0d5pegY0r9UgoMuX$t+X2SqjnUsEiq4fJaSCkgsjqWGuX7cwYiHcV5zB6lO0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz6",
+    "first_name": "Nigora",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:50.740Z",
+    "phone": "+998901000005",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$OjJjzbIJu2hC5mdaDTTeNU$X9nNIwwruizLmQRGU1HaDJyW0Mywdl8G7BdEgNSaFXs=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz7",
+    "first_name": "Sanjar",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:51.551Z",
+    "phone": "+998901000006",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$Qp5AbTYVMk1AA2OT1HlBFl$erYqzC2wzKbnIv8Fu164HFznoAigXhLl9RgCtVm7Kso=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz8",
+    "first_name": "Madina",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:52.363Z",
+    "phone": "+998901000007",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$7uddyW5p19dAsSHynsk0s8$dF0ciFms0PlJa2ogA8ZQKlzAfNPxf5Gcu5nwgxZV4pI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz9",
+    "first_name": "Bekzod",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:53.185Z",
+    "phone": "+998901000008",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$VenaYWIwT8KAsS4A16gRGP$Bo94ao07PwsQfxk6Zr6yUmZHFrz9dEO1nHdaA5crXWk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz10",
+    "first_name": "Kamola",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:54.010Z",
+    "phone": "+998901000009",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$ZA14ktuN9oUgmubfrBv9du$5k8ifk3uX5yFUVpxifSq2t1XsDVv4kESbfc5XFYmkdU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz11",
+    "first_name": "Otabek",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:54.841Z",
+    "phone": "+998901000010",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$m8V7d0I5ttvFbLvvZSQHQu$vnWGddhnW4q4LlAmA1yfVPi0TZ5XgQCJWWejpdJ4FLI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz12",
+    "first_name": "Sevara",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:55.676Z",
+    "phone": "+998901000011",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$cbShbcbqOTpqRkoKQGBXw2$oBl/S5w+A+1aHDGNLJ99H6RazSEB4MNbBMKUVNZ42Jg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz13",
+    "first_name": "Davron",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:56.496Z",
+    "phone": "+998901000012",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$skDfcPRM87GynWPxhysbEH$e5AH51dtCAWu6eCph20cAb8eUd+nc+J2W56Y8Xeblmo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz14",
+    "first_name": "Gulnora",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:57.314Z",
+    "phone": "+998901000013",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$DCS5BuQp52t1T6eWquCr9y$CzoPxxKMAAEXb2gkq9Cl56so97oGEdxmSHmL399zpoY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz15",
+    "first_name": "Shoxrux",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:58.135Z",
+    "phone": "+998901000014",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$hgACiujy29HnZucLaoBiuZ$TP/BtX/yT6mv7TGHs/+ebR8OwXcSdRJdn9BBeaPZ3Fo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz16",
+    "first_name": "Laylo",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:58.955Z",
+    "phone": "+998901000015",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$rmCYrixiXDTJV7iJ6OtO0X$E03LLLSSAUyvZPWQwjxhMlajssfyobKFe0k5cQdEIIU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz17",
+    "first_name": "Islom",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:51:59.774Z",
+    "phone": "+998901000016",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$Xkutx6ZRMfwpUjhBCXUPIW$mme73rMD6S1JvBnMnjUZpU6QjAYxFlZhkRcmOws6dWI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz18",
+    "first_name": "Zilola",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:00.600Z",
+    "phone": "+998901000017",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$agdL0eYPdr5fpRxVtKOLQM$hmBYjkptj+A9ReMfGjnHa7utYj//x+s7/B047qnr1fk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz19",
+    "first_name": "Farrux",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:01.418Z",
+    "phone": "+998901000018",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$fr1GgUPG7ttPzz8LQiYS3H$YrYB4pGATlr8Q0rbAJINHRLl7zUscIguWiiYezK1lag=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz20",
+    "first_name": "Ҳilola",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:02.223Z",
+    "phone": "+998901000019",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$cNstuEK6DAkPwhTDFqHHcT$v8gqhxyAEXUA6FpUEebR4oCfguLFN3rg+v4qNVc1UQU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz21",
+    "first_name": "Bobur",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:03.035Z",
+    "phone": "+998901000020",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$Fe9hM3Cuzn5eOuLpbnp5tY$8BlluE6MMBThzNLXslB3HFHpK5LutHbuaH3h+anYIzo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz22",
+    "first_name": "Dilfuza",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:03.854Z",
+    "phone": "+998901000021",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$hWv7pWeOFz8CpuiGGAwmiY$20Eu3ceik0p08HFOvNCrFEnxilNFAa3DYgxgNSghg8k=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz23",
+    "first_name": "Eldor",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:04.718Z",
+    "phone": "+998901000022",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$1zbTZZu8K7BK77va1R3nqt$Fx5FWL0x3FhzBC1y62SS3I7dzQsAHBCFyg68O3VoBeA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz24",
+    "first_name": "Munisa",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:05.542Z",
+    "phone": "+998901000023",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$rYJiNsq5DGlWCKRZfyGWxX$UZVLkZ9fRn7ymkHNEhD2vWGagJzdPdczgtW+wpkPXl0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz25",
+    "first_name": "Jasur",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:06.412Z",
+    "phone": "+998901000024",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$XfTjdw8lMxYMGgVlxw9nBy$CQoDMtI/gHawKEZilzWoGlmiylKVbN9aNL8rsQeVieg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz26",
+    "first_name": "Charos",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:07.245Z",
+    "phone": "+998901000025",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$hnQLVkHiJlvdBLUFJduvyZ$XQ9MKlDHYL8JofVKplcNhIJImlTeXkpWnMG6xghX1rw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz27",
+    "first_name": "Akbar",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:08.094Z",
+    "phone": "+998901000026",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$B5WgqC501yW2XJxLu94GWi$E/MCC64shIRrmvNVW0OE+P+idOaVhnuo/Dzt/CRPEwY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz28",
+    "first_name": "Feruza",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:08.935Z",
+    "phone": "+998901000027",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$OPt9whybpsKF2pvFiXZWLl$h6c4ISkXXiayIOULv1ecZppiIL6Du+8ahk0VFPCYaV8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz29",
+    "first_name": "Sardor",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:09.751Z",
+    "phone": "+998901000028",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$VHvcxOBuRiVqwfKl4XhLJ1$gD0yUKMGWK4W3RLTQG5xcpmRG3AN9OLifdNUAItYeFM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mijoz30",
+    "first_name": "Nilufar",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:10.565Z",
+    "phone": "+998901000029",
+    "phone_verified": true,
+    "role": "CUSTOMER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$vFcECvqBK4h2UMG2DH44N0$QPCxDorYdZkxx8O7C1SDh0IUfk+580rlowq4kTaPFyo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta1",
+    "first_name": "Sardor",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:11.388Z",
+    "phone": "+998932000000",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$GrclP2ewKTbKBX6B1rleir$/KTv/8MUlm9Q83PhlkEuwpyLEzACJjGjXsENpZvASGo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta2",
+    "first_name": "Jasur",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:12.225Z",
+    "phone": "+998932000001",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$u4rJCDB6OL11MdOYvaoQyS$KZ3FG3SY+fQhYJtpbfF8hRtJcMtm+S2Ijfgwve+hOps=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta3",
+    "first_name": "Bekzod",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:13.044Z",
+    "phone": "+998932000002",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$NiCFad4FRlhklZuw07k58K$Sk6rWi1SM1ID74botushO4ABLQ/i4jVtB9RqZJzOdCk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta4",
+    "first_name": "Doniyor",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:13.874Z",
+    "phone": "+998932000003",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$4qfpQgyVGLuZLWpQ2vxsMg$23XKkUhrrR30qKHqwWsTC//ph2nbeqUatCFvpNkPJaY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta5",
+    "first_name": "Otabek",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:14.743Z",
+    "phone": "+998932000004",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$bAW9j3X6lga2YqdVAIcrR0$FEgX90qgyoe2EEXDBCvalBFZZ3aED6Bbr5ght8IQMUw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta6",
+    "first_name": "Akmal",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:15.602Z",
+    "phone": "+998932000005",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$PaqhO71Z7fI1cSmlT4cJHK$pgAgTmuI25oGXee3X5skpBYF1C6WX4A2Kr1By4kGKYg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta7",
+    "first_name": "Sherzod",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:16.440Z",
+    "phone": "+998932000006",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$VkUqMorPuDIFdPjhxyZx4m$9ZlB3BezHHRQ9ahngiv+Yf2GtpVmRxLGQOjkSCLhpeM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta8",
+    "first_name": "Ulug'bek",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:17.267Z",
+    "phone": "+998932000007",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$QXFhxe9MfBa3Yx7rTDNbJe$3BeFpC7Wmnfs1V0OkR1+/ZGa0/g9kuBxkK8kg+JykeE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta9",
+    "first_name": "Farrux",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:18.141Z",
+    "phone": "+998932000008",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$RCBAEQXAVlnqItcefSEyJO$bjGhzdQsRzdhJwO8lRd7ID0IYMZ08nbHVymOrKRzNkg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta10",
+    "first_name": "Javohir",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:18.975Z",
+    "phone": "+998932000009",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$75nGTp5kra3PwtL7GTzx8k$HQGxw+GIAQsyXwccIOf5dKIF9i9i8geROYhUvk+/6WU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta11",
+    "first_name": "Rustam",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:19.814Z",
+    "phone": "+998932000010",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$x6qInbsQUEsofXjoz9y5tM$bNOJ7G/idypJEtYJsOiYgYw40wQxX8/VxDb+vI1zbHg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta12",
+    "first_name": "Sanjar",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:20.648Z",
+    "phone": "+998932000011",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$JilhIPXsALqOWjF0ZrwxVV$UQYrbct/La9u826lLpe8TevblsDdVS/BOhSjJNZBe68=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta13",
+    "first_name": "Aziz",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:21.469Z",
+    "phone": "+998932000012",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$6gVoaFKqGB9NIFZydkVQAV$MWy+3pZymaCJdixPzCkD8MvEUi6Of7Snwm1QuP72/Rg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta14",
+    "first_name": "Bobur",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:22.314Z",
+    "phone": "+998932000013",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$xTTkAi2iXdjflqXPKTyVcr$jUM3KZuRoBfaxwAPQzovvL53nsGLipb0eQLBIZlbi/8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta15",
+    "first_name": "Dilshod",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:23.140Z",
+    "phone": "+998932000014",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$BwOocoorq0n5KE6uUqPDyi$dBq7kTMlpHXdg2keaRv+ke1wBxYRDgJYuTPh1Brs0IQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta16",
+    "first_name": "Komil",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:23.979Z",
+    "phone": "+998932000015",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$swv9npQkxZWShw18DEq7c5$g6iAk5QcVjIAbFBMFy85JqSwJp7/GuPWccUJsRGTcoc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta17",
+    "first_name": "Murod",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:24.800Z",
+    "phone": "+998932000016",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$CERsl3SXrHO4uuaSC9cqf3$qallmkfKTt2RFBw5kwofMl8dWN6oOnnCgL+ivEZng24=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta18",
+    "first_name": "Nodir",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:25.619Z",
+    "phone": "+998932000017",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$PFh3UAE7kW70mNR3fegm3J$WbmUWbrcYmqUpGixbemwiwOfrn70NMD56ATDL6w8Hz0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta19",
+    "first_name": "Olim",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:26.444Z",
+    "phone": "+998932000018",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$p1qfOWBoXn4BHDPQ8IGi7S$3zF7/rSODdK9Y7xIg/8QapGDt64tOoe0648gapOznLI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta20",
+    "first_name": "Qahramon",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:27.270Z",
+    "phone": "+998932000019",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$uV4StYTLFGDcSW7Q9qIZ3x$jpVmsqi1Nb/lGCYkjA7ZZc0my/o95FlaqwLNxH40isk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta21",
+    "first_name": "Shavkat",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:28.097Z",
+    "phone": "+998932000020",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$l9Ks1aR2HX3PXgrGQ38w7g$b/d3F5Qi3CmqvwC+4UFxD9UWeAn+Wr68D3m5DWPzgYU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta22",
+    "first_name": "Temur",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:28.922Z",
+    "phone": "+998932000021",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$ls0snRNmEGbDhxYLvVAtwe$YoxT92jN6PM9E5sBc6tL241OhHH3hri1vHe7eWSHU/s=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta23",
+    "first_name": "Umid",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:29.770Z",
+    "phone": "+998932000022",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$epHtBDQXyZukJm5shznEjI$4o9fGRLAVlU4yeCPFisjMYTFZm94b7srFjgAbLI48Hs=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta24",
+    "first_name": "Vohid",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:30.588Z",
+    "phone": "+998932000023",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$DoBr6D6glFIkKGIl9D9tiG$Iz85b9OZxXLbAU85cjwJ/SGs3pCvnE2MCkIZ7P8/SOI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "usta25",
+    "first_name": "Zafar",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-30T19:52:31.427Z",
+    "phone": "+998932000024",
+    "phone_verified": true,
+    "role": "MASTER",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "usta1"
+    ],
+    "full_name": "Sardor Qudratov",
+    "experience_years": 5,
+    "bio": "Yapon avtomobillari bo'yicha mutaxassis. Tezkor va kafolatli ish.",
+    "is_verified": true,
+    "can_visit_customer": false,
+    "average_rating": "5.00",
+    "total_reviews": 1
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "usta2"
+    ],
+    "full_name": "Jasur Toirov",
+    "experience_years": 2,
+    "bio": "Diagnostikadan ta'mirgacha to'liq xizmat. Shaffof hisob.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "0.00",
+    "total_reviews": 0
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "usta3"
+    ],
+    "full_name": "Bekzod Rahimov",
+    "experience_years": 13,
+    "bio": "Tezkor yo'l yordami va joyida ta'mir. 24/7 aloqada.",
+    "is_verified": true,
+    "can_visit_customer": false,
+    "average_rating": "3.00",
+    "total_reviews": 1
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "usta4"
+    ],
+    "full_name": "Doniyor Aliyev",
+    "experience_years": 7,
+    "bio": "Original ehtiyot qismlar bilan ishlayman. Kafolat beraman.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "4.00",
+    "total_reviews": 1
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "usta5"
+    ],
+    "full_name": "Otabek Yusupov",
+    "experience_years": 17,
+    "bio": "Original ehtiyot qismlar bilan ishlayman. Kafolat beraman.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "3.00",
+    "total_reviews": 1
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "usta6"
+    ],
+    "full_name": "Akmal Karimov",
+    "experience_years": 10,
+    "bio": "Tezkor yo'l yordami va joyida ta'mir. 24/7 aloqada.",
+    "is_verified": true,
+    "can_visit_customer": false,
+    "average_rating": "4.50",
+    "total_reviews": 2
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "usta7"
+    ],
+    "full_name": "Sherzod To'rayev",
+    "experience_years": 13,
+    "bio": "Diagnostikadan ta'mirgacha to'liq xizmat. Shaffof hisob.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "0.00",
+    "total_reviews": 0
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "usta8"
+    ],
+    "full_name": "Ulug'bek Nazarov",
+    "experience_years": 6,
+    "bio": "Murakkab nosozliklarni aniqlashda tajribali. Halol narx.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "5.00",
+    "total_reviews": 2
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "usta9"
+    ],
+    "full_name": "Farrux Saidov",
+    "experience_years": 4,
+    "bio": "Yapon avtomobillari bo'yicha mutaxassis. Tezkor va kafolatli ish.",
+    "is_verified": true,
+    "can_visit_customer": false,
+    "average_rating": "5.00",
+    "total_reviews": 1
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "usta10"
+    ],
+    "full_name": "Javohir Ibrohimov",
+    "experience_years": 9,
+    "bio": "Murakkab nosozliklarni aniqlashda tajribali. Halol narx.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "5.00",
+    "total_reviews": 2
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 11,
+  "fields": {
+    "user": [
+      "usta11"
+    ],
+    "full_name": "Rustam Eshonov",
+    "experience_years": 16,
+    "bio": "15 yillik tajriba. Har bir mijozga individual yondashuv.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "5.00",
+    "total_reviews": 2
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 12,
+  "fields": {
+    "user": [
+      "usta12"
+    ],
+    "full_name": "Sanjar Mahmudov",
+    "experience_years": 9,
+    "bio": "Tezkor yo'l yordami va joyida ta'mir. 24/7 aloqada.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "0.00",
+    "total_reviews": 0
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 13,
+  "fields": {
+    "user": [
+      "usta13"
+    ],
+    "full_name": "Aziz Islomov",
+    "experience_years": 13,
+    "bio": "Yapon avtomobillari bo'yicha mutaxassis. Tezkor va kafolatli ish.",
+    "is_verified": true,
+    "can_visit_customer": false,
+    "average_rating": "5.00",
+    "total_reviews": 2
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 14,
+  "fields": {
+    "user": [
+      "usta14"
+    ],
+    "full_name": "Bobur Qodirov",
+    "experience_years": 3,
+    "bio": "Yapon avtomobillari bo'yicha mutaxassis. Tezkor va kafolatli ish.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "5.00",
+    "total_reviews": 1
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 15,
+  "fields": {
+    "user": [
+      "usta15"
+    ],
+    "full_name": "Dilshod Yo'ldoshev",
+    "experience_years": 13,
+    "bio": "Murakkab nosozliklarni aniqlashda tajribali. Halol narx.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "5.00",
+    "total_reviews": 2
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 16,
+  "fields": {
+    "user": [
+      "usta16"
+    ],
+    "full_name": "Komil Hasanov",
+    "experience_years": 5,
+    "bio": "Original ehtiyot qismlar bilan ishlayman. Kafolat beraman.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "0.00",
+    "total_reviews": 0
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 17,
+  "fields": {
+    "user": [
+      "usta17"
+    ],
+    "full_name": "Murod Sobirov",
+    "experience_years": 12,
+    "bio": "Yapon avtomobillari bo'yicha mutaxassis. Tezkor va kafolatli ish.",
+    "is_verified": false,
+    "can_visit_customer": true,
+    "average_rating": "0.00",
+    "total_reviews": 0
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 18,
+  "fields": {
+    "user": [
+      "usta18"
+    ],
+    "full_name": "Nodir Tojiboyev",
+    "experience_years": 12,
+    "bio": "Tezkor yo'l yordami va joyida ta'mir. 24/7 aloqada.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "0.00",
+    "total_reviews": 0
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 19,
+  "fields": {
+    "user": [
+      "usta19"
+    ],
+    "full_name": "Olim Ergashev",
+    "experience_years": 11,
+    "bio": "Murakkab nosozliklarni aniqlashda tajribali. Halol narx.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "0.00",
+    "total_reviews": 0
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 20,
+  "fields": {
+    "user": [
+      "usta20"
+    ],
+    "full_name": "Qahramon Usmonov",
+    "experience_years": 8,
+    "bio": "Nemis va koreys avtomobillari bo'yicha ixtisoslashganman.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "4.00",
+    "total_reviews": 1
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 21,
+  "fields": {
+    "user": [
+      "usta21"
+    ],
+    "full_name": "Shavkat Berdiyev",
+    "experience_years": 19,
+    "bio": "Tezkor yo'l yordami va joyida ta'mir. 24/7 aloqada.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "0.00",
+    "total_reviews": 0
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "usta22"
+    ],
+    "full_name": "Temur Rashidov",
+    "experience_years": 4,
+    "bio": "Murakkab nosozliklarni aniqlashda tajribali. Halol narx.",
+    "is_verified": true,
+    "can_visit_customer": false,
+    "average_rating": "5.00",
+    "total_reviews": 1
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 23,
+  "fields": {
+    "user": [
+      "usta23"
+    ],
+    "full_name": "Umid Xolmatov",
+    "experience_years": 11,
+    "bio": "Diagnostikadan ta'mirgacha to'liq xizmat. Shaffof hisob.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "4.00",
+    "total_reviews": 2
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 24,
+  "fields": {
+    "user": [
+      "usta24"
+    ],
+    "full_name": "Vohid Nematov",
+    "experience_years": 14,
+    "bio": "Tezkor yo'l yordami va joyida ta'mir. 24/7 aloqada.",
+    "is_verified": true,
+    "can_visit_customer": false,
+    "average_rating": "0.00",
+    "total_reviews": 0
+  }
+},
+{
+  "model": "masters.masterprofile",
+  "pk": 25,
+  "fields": {
+    "user": [
+      "usta25"
+    ],
+    "full_name": "Zafar Aripov",
+    "experience_years": 13,
+    "bio": "Murakkab nosozliklarni aniqlashda tajribali. Halol narx.",
+    "is_verified": true,
+    "can_visit_customer": true,
+    "average_rating": "4.00",
+    "total_reviews": 2
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 1,
+  "fields": {
+    "master": 1,
+    "name": "Avtomatika Servis",
+    "region": "Toshkent",
+    "district": "Mirzo Ulug'bek",
+    "address": "Chilonzor t., 35-uy",
+    "latitude": "41.236730",
+    "longitude": "69.262560",
+    "open_time": "08:00:00",
+    "close_time": "18:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 2,
+  "fields": {
+    "master": 2,
+    "name": "Yo'l Usta",
+    "region": "Toshkent",
+    "district": "Yakkasaroy",
+    "address": "Olmazor t., 10-uy",
+    "latitude": "41.259837",
+    "longitude": "69.337706",
+    "open_time": "08:00:00",
+    "close_time": "18:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 3,
+  "fields": {
+    "master": 3,
+    "name": "Volt Garage",
+    "region": "Toshkent",
+    "district": "Mirobod",
+    "address": "Sergeli t., 19-uy",
+    "latitude": "41.398421",
+    "longitude": "69.357907",
+    "open_time": "08:00:00",
+    "close_time": "21:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 4,
+  "fields": {
+    "master": 4,
+    "name": "Shina Point",
+    "region": "Toshkent",
+    "district": "Mirobod",
+    "address": "Bektemir t., 15-uy",
+    "latitude": "41.344312",
+    "longitude": "69.355164",
+    "open_time": "08:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 5,
+  "fields": {
+    "master": 5,
+    "name": "Kuzov Pro",
+    "region": "Toshkent",
+    "district": "Mirzo Ulug'bek",
+    "address": "Olmazor t., 9-uy",
+    "latitude": "41.265474",
+    "longitude": "69.293238",
+    "open_time": "09:00:00",
+    "close_time": "21:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 6,
+  "fields": {
+    "master": 6,
+    "name": "Motor Lux",
+    "region": "Toshkent",
+    "district": "Chilonzor",
+    "address": "Mirobod t., 35-uy",
+    "latitude": "41.356239",
+    "longitude": "69.338829",
+    "open_time": "09:00:00",
+    "close_time": "18:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 7,
+  "fields": {
+    "master": 7,
+    "name": "Tezkor Servis",
+    "region": "Toshkent",
+    "district": "Bektemir",
+    "address": "Yunusobod t., 39-uy",
+    "latitude": "41.279429",
+    "longitude": "69.174022",
+    "open_time": "09:00:00",
+    "close_time": "20:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 8,
+  "fields": {
+    "master": 8,
+    "name": "Diagnostika Markazi",
+    "region": "Toshkent",
+    "district": "Mirzo Ulug'bek",
+    "address": "Olmazor t., 34-uy",
+    "latitude": "41.378119",
+    "longitude": "69.262827",
+    "open_time": "08:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 9,
+  "fields": {
+    "master": 9,
+    "name": "Avto Klinika",
+    "region": "Toshkent",
+    "district": "Sergeli",
+    "address": "Olmazor t., 32-uy",
+    "latitude": "41.259644",
+    "longitude": "69.198846",
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 10,
+  "fields": {
+    "master": 10,
+    "name": "Pit Stop",
+    "region": "Toshkent",
+    "district": "Shayxontohur",
+    "address": "Mirzo Ulug'bek t., 18-uy",
+    "latitude": "41.304354",
+    "longitude": "69.362124",
+    "open_time": "08:00:00",
+    "close_time": "21:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 11,
+  "fields": {
+    "master": 11,
+    "name": "Master Auto",
+    "region": "Toshkent",
+    "district": "Bektemir",
+    "address": "Mirobod t., 32-uy",
+    "latitude": "41.248944",
+    "longitude": "69.235013",
+    "open_time": "08:00:00",
+    "close_time": "18:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 12,
+  "fields": {
+    "master": 12,
+    "name": "Mexanika+",
+    "region": "Toshkent",
+    "district": "Shayxontohur",
+    "address": "Mirobod t., 38-uy",
+    "latitude": "41.322822",
+    "longitude": "69.239338",
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 13,
+  "fields": {
+    "master": 13,
+    "name": "Turbo Servis",
+    "region": "Toshkent",
+    "district": "Mirzo Ulug'bek",
+    "address": "Uchtepa t., 35-uy",
+    "latitude": "41.347718",
+    "longitude": "69.304306",
+    "open_time": "08:00:00",
+    "close_time": "20:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 14,
+  "fields": {
+    "master": 14,
+    "name": "Avto Lider",
+    "region": "Toshkent",
+    "district": "Yunusobod",
+    "address": "Yunusobod t., 22-uy",
+    "latitude": "41.359882",
+    "longitude": "69.309902",
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 15,
+  "fields": {
+    "master": 15,
+    "name": "Garaj 24",
+    "region": "Toshkent",
+    "district": "Yakkasaroy",
+    "address": "Bektemir t., 27-uy",
+    "latitude": "41.396372",
+    "longitude": "69.334622",
+    "open_time": "08:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 16,
+  "fields": {
+    "master": 16,
+    "name": "Profi Avto",
+    "region": "Toshkent",
+    "district": "Sergeli",
+    "address": "Sergeli t., 30-uy",
+    "latitude": "41.284020",
+    "longitude": "69.350255",
+    "open_time": "08:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 17,
+  "fields": {
+    "master": 17,
+    "name": "Ustaxona No1",
+    "region": "Toshkent",
+    "district": "Mirzo Ulug'bek",
+    "address": "Yashnobod t., 17-uy",
+    "latitude": "41.227967",
+    "longitude": "69.300983",
+    "open_time": "09:00:00",
+    "close_time": "20:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 18,
+  "fields": {
+    "master": 18,
+    "name": "Avto Hub",
+    "region": "Toshkent",
+    "district": "Olmazor",
+    "address": "Bektemir t., 20-uy",
+    "latitude": "41.341122",
+    "longitude": "69.241497",
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 19,
+  "fields": {
+    "master": 19,
+    "name": "Dvigatel Servis",
+    "region": "Toshkent",
+    "district": "Mirobod",
+    "address": "Yakkasaroy t., 30-uy",
+    "latitude": "41.300602",
+    "longitude": "69.318375",
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 20,
+  "fields": {
+    "master": 20,
+    "name": "Xodovoy Center",
+    "region": "Toshkent",
+    "district": "Sergeli",
+    "address": "Mirzo Ulug'bek t., 1-uy",
+    "latitude": "41.381760",
+    "longitude": "69.359034",
+    "open_time": "08:00:00",
+    "close_time": "21:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 21,
+  "fields": {
+    "master": 21,
+    "name": "Elektro Avto",
+    "region": "Toshkent",
+    "district": "Uchtepa",
+    "address": "Yashnobod t., 33-uy",
+    "latitude": "41.297894",
+    "longitude": "69.369245",
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 22,
+  "fields": {
+    "master": 22,
+    "name": "Konditsioner Servis",
+    "region": "Toshkent",
+    "district": "Mirzo Ulug'bek",
+    "address": "Sergeli t., 5-uy",
+    "latitude": "41.295757",
+    "longitude": "69.242531",
+    "open_time": "09:00:00",
+    "close_time": "21:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 23,
+  "fields": {
+    "master": 23,
+    "name": "Avto Stil",
+    "region": "Toshkent",
+    "district": "Shayxontohur",
+    "address": "Bektemir t., 35-uy",
+    "latitude": "41.365057",
+    "longitude": "69.367255",
+    "open_time": "09:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 24,
+  "fields": {
+    "master": 24,
+    "name": "Yangi Motor",
+    "region": "Toshkent",
+    "district": "Mirobod",
+    "address": "Shayxontohur t., 9-uy",
+    "latitude": "41.377114",
+    "longitude": "69.209717",
+    "open_time": "09:00:00",
+    "close_time": "21:00:00"
+  }
+},
+{
+  "model": "masters.workshop",
+  "pk": 25,
+  "fields": {
+    "master": 25,
+    "name": "Toza Avto",
+    "region": "Toshkent",
+    "district": "Mirobod",
+    "address": "Yunusobod t., 2-uy",
+    "latitude": "41.392011",
+    "longitude": "69.213596",
+    "open_time": "08:00:00",
+    "close_time": "19:00:00"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 1,
+  "fields": {
+    "name": "Dvigatel",
+    "description": "Dvigatel ta'miri va texnik xizmati"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 2,
+  "fields": {
+    "name": "Xodovoy",
+    "description": "Yurish qismi: amortizator, rychag, podshipnik"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 3,
+  "fields": {
+    "name": "Tormoz tizimi",
+    "description": "Tormoz kolodka, disk va suyuqlik"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 4,
+  "fields": {
+    "name": "Elektrika",
+    "description": "Avto-elektrika va simlar"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 5,
+  "fields": {
+    "name": "Konditsioner",
+    "description": "Konditsioner ta'miri va to'ldirish"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 6,
+  "fields": {
+    "name": "Diagnostika",
+    "description": "Kompyuter diagnostikasi (OBD)"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 7,
+  "fields": {
+    "name": "Kuzov & bo'yoq",
+    "description": "Kuzov tiklash va bo'yoq ishlari"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 8,
+  "fields": {
+    "name": "Shina & balans",
+    "description": "Shina almashtirish va balanslash"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 9,
+  "fields": {
+    "name": "Transmissiya",
+    "description": "Korobka va ssepleniya"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 10,
+  "fields": {
+    "name": "Moy almashtirish",
+    "description": "Moy va filtrlarni almashtirish"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 11,
+  "fields": {
+    "name": "Akkumulyator",
+    "description": "Akkumulyator tekshirish va almashtirish"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 12,
+  "fields": {
+    "name": "Faralar",
+    "description": "Faralarni sozlash va almashtirish"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 13,
+  "fields": {
+    "name": "Generator / starter",
+    "description": "Generator va starter ta'miri"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 14,
+  "fields": {
+    "name": "Egzoz tizimi",
+    "description": "Tutun va egzoz quvurlari"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 15,
+  "fields": {
+    "name": "Oyna / stakan",
+    "description": "Oyna almashtirish va tonirovka"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 16,
+  "fields": {
+    "name": "Signalizatsiya",
+    "description": "Signalizatsiya va markaziy qulf"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 17,
+  "fields": {
+    "name": "Salon tozalash",
+    "description": "Kimyoviy tozalash va himmchistka"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 18,
+  "fields": {
+    "name": "Razval-sxojdeniye",
+    "description": "G'ildiraklar geometriyasi"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 19,
+  "fields": {
+    "name": "Yog'lash punkti",
+    "description": "Tezkor moy va yog'lash xizmati"
+  }
+},
+{
+  "model": "services.servicecategory",
+  "pk": 20,
+  "fields": {
+    "name": "Yo'l yordami",
+    "description": "Joyida tezkor yordam va evakuatsiya"
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 1,
+  "fields": {
+    "master": 1,
+    "category": 8,
+    "title": "Shina yamash",
+    "price_from": "50000.00",
+    "price_to": "160000.00",
+    "description": "Shina yamash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 2,
+  "fields": {
+    "master": 1,
+    "category": 17,
+    "title": "Ta'mirlash",
+    "price_from": "120000.00",
+    "price_to": "190000.00",
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 3,
+  "fields": {
+    "master": 2,
+    "category": 4,
+    "title": "Datchik almashtirish",
+    "price_from": "130000.00",
+    "price_to": "230000.00",
+    "description": "Datchik almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 4,
+  "fields": {
+    "master": 2,
+    "category": 12,
+    "title": "Profilaktika",
+    "price_from": "80000.00",
+    "price_to": "170000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 5,
+  "fields": {
+    "master": 2,
+    "category": 19,
+    "title": "Diagnostika",
+    "price_from": "220000.00",
+    "price_to": null,
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 6,
+  "fields": {
+    "master": 3,
+    "category": 15,
+    "title": "Ta'mirlash",
+    "price_from": "160000.00",
+    "price_to": null,
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 7,
+  "fields": {
+    "master": 3,
+    "category": 12,
+    "title": "Ta'mirlash",
+    "price_from": "250000.00",
+    "price_to": null,
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 8,
+  "fields": {
+    "master": 3,
+    "category": 6,
+    "title": "Xatolik kodlarini o'qish",
+    "price_from": "100000.00",
+    "price_to": "160000.00",
+    "description": "Xatolik kodlarini o'qish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 9,
+  "fields": {
+    "master": 4,
+    "category": 11,
+    "title": "Ta'mirlash",
+    "price_from": "70000.00",
+    "price_to": null,
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 10,
+  "fields": {
+    "master": 4,
+    "category": 13,
+    "title": "Profilaktika",
+    "price_from": "150000.00",
+    "price_to": null,
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 11,
+  "fields": {
+    "master": 5,
+    "category": 13,
+    "title": "Profilaktika",
+    "price_from": "200000.00",
+    "price_to": null,
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 12,
+  "fields": {
+    "master": 5,
+    "category": 12,
+    "title": "Diagnostika",
+    "price_from": "80000.00",
+    "price_to": null,
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 13,
+  "fields": {
+    "master": 5,
+    "category": 8,
+    "title": "Shina almashtirish",
+    "price_from": "180000.00",
+    "price_to": "270000.00",
+    "description": "Shina almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 14,
+  "fields": {
+    "master": 5,
+    "category": 5,
+    "title": "Kompressor ta'miri",
+    "price_from": "240000.00",
+    "price_to": "350000.00",
+    "description": "Kompressor ta'miri — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 15,
+  "fields": {
+    "master": 6,
+    "category": 14,
+    "title": "Diagnostika",
+    "price_from": "130000.00",
+    "price_to": "180000.00",
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 16,
+  "fields": {
+    "master": 6,
+    "category": 6,
+    "title": "Xatolik kodlarini o'qish",
+    "price_from": "80000.00",
+    "price_to": "150000.00",
+    "description": "Xatolik kodlarini o'qish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 17,
+  "fields": {
+    "master": 6,
+    "category": 15,
+    "title": "Profilaktika",
+    "price_from": "210000.00",
+    "price_to": "260000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 18,
+  "fields": {
+    "master": 7,
+    "category": 2,
+    "title": "Rychag almashtirish",
+    "price_from": "70000.00",
+    "price_to": null,
+    "description": "Rychag almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 19,
+  "fields": {
+    "master": 7,
+    "category": 8,
+    "title": "G'ildirak balanslash",
+    "price_from": "70000.00",
+    "price_to": "180000.00",
+    "description": "G'ildirak balanslash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 20,
+  "fields": {
+    "master": 8,
+    "category": 10,
+    "title": "Salon filtri",
+    "price_from": "190000.00",
+    "price_to": null,
+    "description": "Salon filtri — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 21,
+  "fields": {
+    "master": 8,
+    "category": 13,
+    "title": "Diagnostika",
+    "price_from": "70000.00",
+    "price_to": "190000.00",
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 22,
+  "fields": {
+    "master": 8,
+    "category": 12,
+    "title": "Profilaktika",
+    "price_from": "120000.00",
+    "price_to": "150000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 23,
+  "fields": {
+    "master": 8,
+    "category": 15,
+    "title": "Diagnostika",
+    "price_from": "250000.00",
+    "price_to": null,
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 24,
+  "fields": {
+    "master": 9,
+    "category": 14,
+    "title": "Diagnostika",
+    "price_from": "180000.00",
+    "price_to": "270000.00",
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 25,
+  "fields": {
+    "master": 9,
+    "category": 7,
+    "title": "Tirnalish tuzatish",
+    "price_from": "60000.00",
+    "price_to": "100000.00",
+    "description": "Tirnalish tuzatish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 26,
+  "fields": {
+    "master": 9,
+    "category": 4,
+    "title": "Elektr nosozlik diagnostikasi",
+    "price_from": "170000.00",
+    "price_to": "210000.00",
+    "description": "Elektr nosozlik diagnostikasi — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 27,
+  "fields": {
+    "master": 10,
+    "category": 4,
+    "title": "Elektr nosozlik diagnostikasi",
+    "price_from": "120000.00",
+    "price_to": null,
+    "description": "Elektr nosozlik diagnostikasi — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 28,
+  "fields": {
+    "master": 10,
+    "category": 2,
+    "title": "Amortizator almashtirish",
+    "price_from": "200000.00",
+    "price_to": null,
+    "description": "Amortizator almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 29,
+  "fields": {
+    "master": 10,
+    "category": 18,
+    "title": "Ta'mirlash",
+    "price_from": "60000.00",
+    "price_to": null,
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 30,
+  "fields": {
+    "master": 10,
+    "category": 1,
+    "title": "Dvigatel kapital ta'miri",
+    "price_from": "170000.00",
+    "price_to": null,
+    "description": "Dvigatel kapital ta'miri — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 31,
+  "fields": {
+    "master": 11,
+    "category": 11,
+    "title": "Profilaktika",
+    "price_from": "210000.00",
+    "price_to": null,
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 32,
+  "fields": {
+    "master": 11,
+    "category": 2,
+    "title": "Rychag almashtirish",
+    "price_from": "70000.00",
+    "price_to": "110000.00",
+    "description": "Rychag almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 33,
+  "fields": {
+    "master": 11,
+    "category": 19,
+    "title": "Profilaktika",
+    "price_from": "70000.00",
+    "price_to": "130000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 34,
+  "fields": {
+    "master": 11,
+    "category": 16,
+    "title": "Ta'mirlash",
+    "price_from": "80000.00",
+    "price_to": "200000.00",
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 35,
+  "fields": {
+    "master": 12,
+    "category": 11,
+    "title": "Diagnostika",
+    "price_from": "250000.00",
+    "price_to": null,
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 36,
+  "fields": {
+    "master": 12,
+    "category": 8,
+    "title": "G'ildirak balanslash",
+    "price_from": "70000.00",
+    "price_to": null,
+    "description": "G'ildirak balanslash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 37,
+  "fields": {
+    "master": 12,
+    "category": 9,
+    "title": "Korobka diagnostikasi",
+    "price_from": "230000.00",
+    "price_to": "270000.00",
+    "description": "Korobka diagnostikasi — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 38,
+  "fields": {
+    "master": 12,
+    "category": 13,
+    "title": "Profilaktika",
+    "price_from": "110000.00",
+    "price_to": "160000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 39,
+  "fields": {
+    "master": 13,
+    "category": 4,
+    "title": "Elektr nosozlik diagnostikasi",
+    "price_from": "220000.00",
+    "price_to": null,
+    "description": "Elektr nosozlik diagnostikasi — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 40,
+  "fields": {
+    "master": 13,
+    "category": 5,
+    "title": "Kompressor ta'miri",
+    "price_from": "240000.00",
+    "price_to": null,
+    "description": "Kompressor ta'miri — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 41,
+  "fields": {
+    "master": 13,
+    "category": 9,
+    "title": "Ssepleniya almashtirish",
+    "price_from": "110000.00",
+    "price_to": "180000.00",
+    "description": "Ssepleniya almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 42,
+  "fields": {
+    "master": 13,
+    "category": 20,
+    "title": "Profilaktika",
+    "price_from": "200000.00",
+    "price_to": null,
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 43,
+  "fields": {
+    "master": 14,
+    "category": 15,
+    "title": "Diagnostika",
+    "price_from": "70000.00",
+    "price_to": "120000.00",
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 44,
+  "fields": {
+    "master": 14,
+    "category": 18,
+    "title": "Profilaktika",
+    "price_from": "60000.00",
+    "price_to": "180000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 45,
+  "fields": {
+    "master": 14,
+    "category": 14,
+    "title": "Profilaktika",
+    "price_from": "90000.00",
+    "price_to": "120000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 46,
+  "fields": {
+    "master": 14,
+    "category": 1,
+    "title": "Tasma (remen) almashtirish",
+    "price_from": "160000.00",
+    "price_to": "190000.00",
+    "description": "Tasma (remen) almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 47,
+  "fields": {
+    "master": 15,
+    "category": 14,
+    "title": "Diagnostika",
+    "price_from": "150000.00",
+    "price_to": "240000.00",
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 48,
+  "fields": {
+    "master": 15,
+    "category": 1,
+    "title": "Forsunka tozalash",
+    "price_from": "120000.00",
+    "price_to": null,
+    "description": "Forsunka tozalash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 49,
+  "fields": {
+    "master": 16,
+    "category": 7,
+    "title": "Tirnalish tuzatish",
+    "price_from": "130000.00",
+    "price_to": "200000.00",
+    "description": "Tirnalish tuzatish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 50,
+  "fields": {
+    "master": 16,
+    "category": 13,
+    "title": "Ta'mirlash",
+    "price_from": "250000.00",
+    "price_to": "360000.00",
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 51,
+  "fields": {
+    "master": 17,
+    "category": 20,
+    "title": "Ta'mirlash",
+    "price_from": "230000.00",
+    "price_to": null,
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 52,
+  "fields": {
+    "master": 17,
+    "category": 17,
+    "title": "Diagnostika",
+    "price_from": "180000.00",
+    "price_to": null,
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 53,
+  "fields": {
+    "master": 17,
+    "category": 4,
+    "title": "Datchik almashtirish",
+    "price_from": "110000.00",
+    "price_to": "150000.00",
+    "description": "Datchik almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 54,
+  "fields": {
+    "master": 18,
+    "category": 14,
+    "title": "Profilaktika",
+    "price_from": "100000.00",
+    "price_to": "170000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 55,
+  "fields": {
+    "master": 18,
+    "category": 13,
+    "title": "Ta'mirlash",
+    "price_from": "220000.00",
+    "price_to": "290000.00",
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 56,
+  "fields": {
+    "master": 19,
+    "category": 3,
+    "title": "Tormoz kolodkalari",
+    "price_from": "120000.00",
+    "price_to": "180000.00",
+    "description": "Tormoz kolodkalari — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 57,
+  "fields": {
+    "master": 19,
+    "category": 10,
+    "title": "Moy va filtr almashtirish",
+    "price_from": "90000.00",
+    "price_to": null,
+    "description": "Moy va filtr almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 58,
+  "fields": {
+    "master": 19,
+    "category": 17,
+    "title": "Diagnostika",
+    "price_from": "200000.00",
+    "price_to": "240000.00",
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 59,
+  "fields": {
+    "master": 19,
+    "category": 11,
+    "title": "Ta'mirlash",
+    "price_from": "180000.00",
+    "price_to": "300000.00",
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 60,
+  "fields": {
+    "master": 20,
+    "category": 6,
+    "title": "To'liq kompyuter diagnostikasi",
+    "price_from": "60000.00",
+    "price_to": "100000.00",
+    "description": "To'liq kompyuter diagnostikasi — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 61,
+  "fields": {
+    "master": 20,
+    "category": 17,
+    "title": "Ta'mirlash",
+    "price_from": "90000.00",
+    "price_to": "200000.00",
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 62,
+  "fields": {
+    "master": 21,
+    "category": 16,
+    "title": "Profilaktika",
+    "price_from": "130000.00",
+    "price_to": "240000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 63,
+  "fields": {
+    "master": 21,
+    "category": 15,
+    "title": "Ta'mirlash",
+    "price_from": "250000.00",
+    "price_to": null,
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 64,
+  "fields": {
+    "master": 21,
+    "category": 9,
+    "title": "Ssepleniya almashtirish",
+    "price_from": "70000.00",
+    "price_to": "130000.00",
+    "description": "Ssepleniya almashtirish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 65,
+  "fields": {
+    "master": 21,
+    "category": 8,
+    "title": "G'ildirak balanslash",
+    "price_from": "150000.00",
+    "price_to": "260000.00",
+    "description": "G'ildirak balanslash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 66,
+  "fields": {
+    "master": 22,
+    "category": 7,
+    "title": "Tirnalish tuzatish",
+    "price_from": "230000.00",
+    "price_to": "260000.00",
+    "description": "Tirnalish tuzatish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 67,
+  "fields": {
+    "master": 22,
+    "category": 14,
+    "title": "Profilaktika",
+    "price_from": "170000.00",
+    "price_to": "250000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 68,
+  "fields": {
+    "master": 23,
+    "category": 14,
+    "title": "Ta'mirlash",
+    "price_from": "150000.00",
+    "price_to": "240000.00",
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 69,
+  "fields": {
+    "master": 23,
+    "category": 16,
+    "title": "Profilaktika",
+    "price_from": "100000.00",
+    "price_to": "150000.00",
+    "description": "Profilaktika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 70,
+  "fields": {
+    "master": 23,
+    "category": 1,
+    "title": "Forsunka tozalash",
+    "price_from": "220000.00",
+    "price_to": null,
+    "description": "Forsunka tozalash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 71,
+  "fields": {
+    "master": 24,
+    "category": 7,
+    "title": "Tirnalish tuzatish",
+    "price_from": "170000.00",
+    "price_to": null,
+    "description": "Tirnalish tuzatish — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 72,
+  "fields": {
+    "master": 24,
+    "category": 15,
+    "title": "Ta'mirlash",
+    "price_from": "130000.00",
+    "price_to": "230000.00",
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 73,
+  "fields": {
+    "master": 24,
+    "category": 11,
+    "title": "Diagnostika",
+    "price_from": "220000.00",
+    "price_to": null,
+    "description": "Diagnostika — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 74,
+  "fields": {
+    "master": 25,
+    "category": 5,
+    "title": "Radiator tozalash",
+    "price_from": "80000.00",
+    "price_to": "140000.00",
+    "description": "Radiator tozalash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "services.masterservice",
+  "pk": 75,
+  "fields": {
+    "master": 25,
+    "category": 16,
+    "title": "Ta'mirlash",
+    "price_from": "130000.00",
+    "price_to": "180000.00",
+    "description": "Ta'mirlash — sifatli va kafolatli bajariladi."
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "customer": [
+      "mijoz20"
+    ],
+    "master": 20,
+    "service_category": 4,
+    "problem_description": "Shina yorilди, zaxira qo'yish va balanslash kerak.",
+    "customer_latitude": "41.362169",
+    "customer_longitude": "69.372681",
+    "customer_address": "Chilonzor t., 19-kvartal",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "270000.00",
+    "final_price": "285000.00",
+    "created_at": "2026-06-30T10:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 2,
+  "fields": {
+    "customer": [
+      "mijoz19"
+    ],
+    "master": 22,
+    "service_category": 13,
+    "problem_description": "Generator zaryad bermayapti shekilli.",
+    "customer_latitude": "41.262814",
+    "customer_longitude": "69.298157",
+    "customer_address": "Mirobod t., 8-kvartal",
+    "need_master_visit": true,
+    "status": "ACCEPTED",
+    "offered_price": "170000.00",
+    "final_price": null,
+    "created_at": "2026-06-26T21:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 3,
+  "fields": {
+    "customer": [
+      "mijoz25"
+    ],
+    "master": 10,
+    "service_category": 4,
+    "problem_description": "Shina yorilди, zaxira qo'yish va balanslash kerak.",
+    "customer_latitude": "41.388496",
+    "customer_longitude": "69.336264",
+    "customer_address": "Yakkasaroy t., 18-kvartal",
+    "need_master_visit": true,
+    "status": "ON_THE_WAY",
+    "offered_price": "240000.00",
+    "final_price": null,
+    "created_at": "2026-06-16T22:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 4,
+  "fields": {
+    "customer": [
+      "mijoz12"
+    ],
+    "master": 3,
+    "service_category": 1,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.298290",
+    "customer_longitude": "69.277777",
+    "customer_address": "Shayxontohur t., 12-kvartal",
+    "need_master_visit": true,
+    "status": "IN_PROGRESS",
+    "offered_price": "150000.00",
+    "final_price": null,
+    "created_at": "2026-06-10T05:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 5,
+  "fields": {
+    "customer": [
+      "mijoz23"
+    ],
+    "master": 5,
+    "service_category": 17,
+    "problem_description": "Salon ichida yonilg'i hidi bor.",
+    "customer_latitude": "41.274294",
+    "customer_longitude": "69.341377",
+    "customer_address": "Bektemir t., 25-kvartal",
+    "need_master_visit": false,
+    "status": "ON_THE_WAY",
+    "offered_price": "280000.00",
+    "final_price": "320000.00",
+    "created_at": "2026-06-16T06:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 6,
+  "fields": {
+    "customer": [
+      "mijoz27"
+    ],
+    "master": 24,
+    "service_category": 8,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.380621",
+    "customer_longitude": "69.235523",
+    "customer_address": "Uchtepa t., 8-kvartal",
+    "need_master_visit": true,
+    "status": "CANCELLED",
+    "offered_price": "150000.00",
+    "final_price": null,
+    "created_at": "2026-06-06T05:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 7,
+  "fields": {
+    "customer": [
+      "mijoz19"
+    ],
+    "master": 20,
+    "service_category": 1,
+    "problem_description": "G'ildiraklar bir tomonga tortyapti, rul titraydi.",
+    "customer_latitude": "41.367233",
+    "customer_longitude": "69.216105",
+    "customer_address": "Sergeli t., 12-kvartal",
+    "need_master_visit": true,
+    "status": "ACCEPTED",
+    "offered_price": "150000.00",
+    "final_price": null,
+    "created_at": "2026-06-05T11:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 8,
+  "fields": {
+    "customer": [
+      "mijoz11"
+    ],
+    "master": 9,
+    "service_category": 9,
+    "problem_description": "Moy almashtirish va umumiy ko'rik kerak.",
+    "customer_latitude": "41.232705",
+    "customer_longitude": "69.369350",
+    "customer_address": "Chilonzor t., 8-kvartal",
+    "need_master_visit": true,
+    "status": "ACCEPTED",
+    "offered_price": "270000.00",
+    "final_price": null,
+    "created_at": "2026-06-07T06:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 9,
+  "fields": {
+    "customer": [
+      "mijoz16"
+    ],
+    "master": 18,
+    "service_category": 16,
+    "problem_description": "Salon ichida yonilg'i hidi bor.",
+    "customer_latitude": "41.344976",
+    "customer_longitude": "69.269372",
+    "customer_address": "Yunusobod t., 3-kvartal",
+    "need_master_visit": true,
+    "status": "ON_THE_WAY",
+    "offered_price": "270000.00",
+    "final_price": null,
+    "created_at": "2026-06-21T12:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 10,
+  "fields": {
+    "customer": [
+      "mijoz13"
+    ],
+    "master": 23,
+    "service_category": 19,
+    "problem_description": "Dvigatel chizig'i (check) yonib turibdi.",
+    "customer_latitude": "41.306803",
+    "customer_longitude": "69.285921",
+    "customer_address": "Shayxontohur t., 24-kvartal",
+    "need_master_visit": false,
+    "status": "IN_PROGRESS",
+    "offered_price": "260000.00",
+    "final_price": null,
+    "created_at": "2026-06-13T09:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 11,
+  "fields": {
+    "customer": [
+      "mijoz12"
+    ],
+    "master": 23,
+    "service_category": 9,
+    "problem_description": "Mashina yurganda old tomondan taqillagan ovoz keladi.",
+    "customer_latitude": "41.250386",
+    "customer_longitude": "69.218254",
+    "customer_address": "Chilonzor t., 24-kvartal",
+    "need_master_visit": false,
+    "status": "COMPLETED",
+    "offered_price": "140000.00",
+    "final_price": "190000.00",
+    "created_at": "2026-05-30T21:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 12,
+  "fields": {
+    "customer": [
+      "mijoz6"
+    ],
+    "master": 7,
+    "service_category": 9,
+    "problem_description": "Generator zaryad bermayapti shekilli.",
+    "customer_latitude": "41.325415",
+    "customer_longitude": "69.331779",
+    "customer_address": "Yashnobod t., 10-kvartal",
+    "need_master_visit": false,
+    "status": "CANCELLED",
+    "offered_price": "200000.00",
+    "final_price": null,
+    "created_at": "2026-06-27T13:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 13,
+  "fields": {
+    "customer": [
+      "mijoz10"
+    ],
+    "master": 8,
+    "service_category": 1,
+    "problem_description": "Generator zaryad bermayapti shekilli.",
+    "customer_latitude": "41.316543",
+    "customer_longitude": "69.234599",
+    "customer_address": "Yunusobod t., 18-kvartal",
+    "need_master_visit": false,
+    "status": "PENDING",
+    "offered_price": "140000.00",
+    "final_price": null,
+    "created_at": "2026-06-20T21:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 14,
+  "fields": {
+    "customer": [
+      "mijoz5"
+    ],
+    "master": 21,
+    "service_category": 4,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.233043",
+    "customer_longitude": "69.236605",
+    "customer_address": "Uchtepa t., 15-kvartal",
+    "need_master_visit": true,
+    "status": "ACCEPTED",
+    "offered_price": "200000.00",
+    "final_price": null,
+    "created_at": "2026-06-20T14:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 15,
+  "fields": {
+    "customer": [
+      "mijoz2"
+    ],
+    "master": 9,
+    "service_category": 4,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.241536",
+    "customer_longitude": "69.278086",
+    "customer_address": "Yashnobod t., 21-kvartal",
+    "need_master_visit": true,
+    "status": "ON_THE_WAY",
+    "offered_price": "200000.00",
+    "final_price": null,
+    "created_at": "2026-06-09T18:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 16,
+  "fields": {
+    "customer": [
+      "mijoz5"
+    ],
+    "master": 5,
+    "service_category": 3,
+    "problem_description": "Mashina yurganda old tomondan taqillagan ovoz keladi.",
+    "customer_latitude": "41.250033",
+    "customer_longitude": "69.332626",
+    "customer_address": "Yashnobod t., 20-kvartal",
+    "need_master_visit": true,
+    "status": "IN_PROGRESS",
+    "offered_price": "140000.00",
+    "final_price": null,
+    "created_at": "2026-06-05T00:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 17,
+  "fields": {
+    "customer": [
+      "mijoz8"
+    ],
+    "master": 25,
+    "service_category": 15,
+    "problem_description": "Akkumulyator tez o'tirib qolyapti, ertalab yura olmayapti.",
+    "customer_latitude": "41.368708",
+    "customer_longitude": "69.377743",
+    "customer_address": "Olmazor t., 19-kvartal",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "190000.00",
+    "final_price": "160000.00",
+    "created_at": "2026-06-10T20:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 18,
+  "fields": {
+    "customer": [
+      "mijoz4"
+    ],
+    "master": 25,
+    "service_category": 9,
+    "problem_description": "Salon ichida yonilg'i hidi bor.",
+    "customer_latitude": "41.244071",
+    "customer_longitude": "69.227710",
+    "customer_address": "Bektemir t., 3-kvartal",
+    "need_master_visit": false,
+    "status": "CANCELLED",
+    "offered_price": "110000.00",
+    "final_price": null,
+    "created_at": "2026-06-25T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 19,
+  "fields": {
+    "customer": [
+      "mijoz14"
+    ],
+    "master": 15,
+    "service_category": 10,
+    "problem_description": "Dvigatel ishlaganda g'alati ovoz chiqyapti, quvvati pasaygan.",
+    "customer_latitude": "41.268117",
+    "customer_longitude": "69.321128",
+    "customer_address": "Uchtepa t., 3-kvartal",
+    "need_master_visit": true,
+    "status": "PENDING",
+    "offered_price": "200000.00",
+    "final_price": null,
+    "created_at": "2026-06-09T12:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 20,
+  "fields": {
+    "customer": [
+      "mijoz30"
+    ],
+    "master": 9,
+    "service_category": 19,
+    "problem_description": "Salon ichida yonilg'i hidi bor.",
+    "customer_latitude": "41.359706",
+    "customer_longitude": "69.219301",
+    "customer_address": "Chilonzor t., 18-kvartal",
+    "need_master_visit": true,
+    "status": "ACCEPTED",
+    "offered_price": "250000.00",
+    "final_price": null,
+    "created_at": "2026-06-22T23:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 21,
+  "fields": {
+    "customer": [
+      "mijoz5"
+    ],
+    "master": 9,
+    "service_category": 2,
+    "problem_description": "Konditsioner sovutmayapti, faqat issiq havo puflaydi.",
+    "customer_latitude": "41.357902",
+    "customer_longitude": "69.298746",
+    "customer_address": "Yashnobod t., 30-kvartal",
+    "need_master_visit": true,
+    "status": "ON_THE_WAY",
+    "offered_price": "70000.00",
+    "final_price": null,
+    "created_at": "2026-06-21T05:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 22,
+  "fields": {
+    "customer": [
+      "mijoz4"
+    ],
+    "master": 15,
+    "service_category": 13,
+    "problem_description": "Akkumulyator tez o'tirib qolyapti, ertalab yura olmayapti.",
+    "customer_latitude": "41.311157",
+    "customer_longitude": "69.278496",
+    "customer_address": "Chilonzor t., 20-kvartal",
+    "need_master_visit": true,
+    "status": "IN_PROGRESS",
+    "offered_price": "270000.00",
+    "final_price": null,
+    "created_at": "2026-06-29T06:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 23,
+  "fields": {
+    "customer": [
+      "mijoz24"
+    ],
+    "master": 11,
+    "service_category": 3,
+    "problem_description": "Mashina yurganda old tomondan taqillagan ovoz keladi.",
+    "customer_latitude": "41.384987",
+    "customer_longitude": "69.346929",
+    "customer_address": "Yashnobod t., 19-kvartal",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "50000.00",
+    "final_price": "20000.00",
+    "created_at": "2026-06-05T22:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 24,
+  "fields": {
+    "customer": [
+      "mijoz27"
+    ],
+    "master": 9,
+    "service_category": 6,
+    "problem_description": "G'ildiraklar bir tomonga tortyapti, rul titraydi.",
+    "customer_latitude": "41.314115",
+    "customer_longitude": "69.268183",
+    "customer_address": "Olmazor t., 6-kvartal",
+    "need_master_visit": true,
+    "status": "CANCELLED",
+    "offered_price": "290000.00",
+    "final_price": null,
+    "created_at": "2026-06-12T06:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 25,
+  "fields": {
+    "customer": [
+      "mijoz21"
+    ],
+    "master": 16,
+    "service_category": 11,
+    "problem_description": "Dvigatel chizig'i (check) yonib turibdi.",
+    "customer_latitude": "41.338302",
+    "customer_longitude": "69.351284",
+    "customer_address": "Yakkasaroy t., 14-kvartal",
+    "need_master_visit": false,
+    "status": "PENDING",
+    "offered_price": "180000.00",
+    "final_price": null,
+    "created_at": "2026-06-08T04:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 26,
+  "fields": {
+    "customer": [
+      "mijoz10"
+    ],
+    "master": 22,
+    "service_category": 2,
+    "problem_description": "G'ildiraklar bir tomonga tortyapti, rul titraydi.",
+    "customer_latitude": "41.245171",
+    "customer_longitude": "69.230217",
+    "customer_address": "Chilonzor t., 25-kvartal",
+    "need_master_visit": true,
+    "status": "IN_PROGRESS",
+    "offered_price": "220000.00",
+    "final_price": null,
+    "created_at": "2026-06-18T03:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 27,
+  "fields": {
+    "customer": [
+      "mijoz27"
+    ],
+    "master": 1,
+    "service_category": 14,
+    "problem_description": "Dvigatel ishlaganda g'alati ovoz chiqyapti, quvvati pasaygan.",
+    "customer_latitude": "41.261094",
+    "customer_longitude": "69.252093",
+    "customer_address": "Uchtepa t., 21-kvartal",
+    "need_master_visit": true,
+    "status": "CANCELLED",
+    "offered_price": "190000.00",
+    "final_price": null,
+    "created_at": "2026-06-16T18:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 28,
+  "fields": {
+    "customer": [
+      "mijoz7"
+    ],
+    "master": 9,
+    "service_category": 15,
+    "problem_description": "Старter aylanmayapti, faqat shiqillaydi.",
+    "customer_latitude": "41.342801",
+    "customer_longitude": "69.204022",
+    "customer_address": "Mirobod t., 20-kvartal",
+    "need_master_visit": false,
+    "status": "COMPLETED",
+    "offered_price": "140000.00",
+    "final_price": "140000.00",
+    "created_at": "2026-06-08T14:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 29,
+  "fields": {
+    "customer": [
+      "mijoz10"
+    ],
+    "master": 18,
+    "service_category": 8,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.377150",
+    "customer_longitude": "69.272027",
+    "customer_address": "Chilonzor t., 21-kvartal",
+    "need_master_visit": true,
+    "status": "PENDING",
+    "offered_price": "70000.00",
+    "final_price": null,
+    "created_at": "2026-06-04T15:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 30,
+  "fields": {
+    "customer": [
+      "mijoz16"
+    ],
+    "master": 23,
+    "service_category": 14,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.308281",
+    "customer_longitude": "69.274181",
+    "customer_address": "Uchtepa t., 18-kvartal",
+    "need_master_visit": true,
+    "status": "ON_THE_WAY",
+    "offered_price": "130000.00",
+    "final_price": null,
+    "created_at": "2026-06-26T07:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 31,
+  "fields": {
+    "customer": [
+      "mijoz7"
+    ],
+    "master": 20,
+    "service_category": 3,
+    "problem_description": "Akkumulyator tez o'tirib qolyapti, ertalab yura olmayapti.",
+    "customer_latitude": "41.354709",
+    "customer_longitude": "69.350619",
+    "customer_address": "Yakkasaroy t., 30-kvartal",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "90000.00",
+    "final_price": "140000.00",
+    "created_at": "2026-06-22T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 32,
+  "fields": {
+    "customer": [
+      "mijoz10"
+    ],
+    "master": 24,
+    "service_category": 16,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.254856",
+    "customer_longitude": "69.287453",
+    "customer_address": "Yakkasaroy t., 11-kvartal",
+    "need_master_visit": true,
+    "status": "ON_THE_WAY",
+    "offered_price": "230000.00",
+    "final_price": null,
+    "created_at": "2026-06-13T02:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 33,
+  "fields": {
+    "customer": [
+      "mijoz13"
+    ],
+    "master": 15,
+    "service_category": 8,
+    "problem_description": "Faralar xira yonadi, biri umuman ishlamaydi.",
+    "customer_latitude": "41.292356",
+    "customer_longitude": "69.350940",
+    "customer_address": "Shayxontohur t., 2-kvartal",
+    "need_master_visit": true,
+    "status": "ON_THE_WAY",
+    "offered_price": "270000.00",
+    "final_price": null,
+    "created_at": "2026-06-19T20:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 34,
+  "fields": {
+    "customer": [
+      "mijoz16"
+    ],
+    "master": 23,
+    "service_category": 5,
+    "problem_description": "G'ildiraklar bir tomonga tortyapti, rul titraydi.",
+    "customer_latitude": "41.385453",
+    "customer_longitude": "69.204986",
+    "customer_address": "Yashnobod t., 11-kvartal",
+    "need_master_visit": false,
+    "status": "IN_PROGRESS",
+    "offered_price": "260000.00",
+    "final_price": null,
+    "created_at": "2026-06-03T16:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 35,
+  "fields": {
+    "customer": [
+      "mijoz28"
+    ],
+    "master": 15,
+    "service_category": 1,
+    "problem_description": "Generator zaryad bermayapti shekilli.",
+    "customer_latitude": "41.254146",
+    "customer_longitude": "69.353924",
+    "customer_address": "Mirzo Ulug'bek t., 3-kvartal",
+    "need_master_visit": true,
+    "status": "PENDING",
+    "offered_price": "190000.00",
+    "final_price": null,
+    "created_at": "2026-06-15T11:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 36,
+  "fields": {
+    "customer": [
+      "mijoz2"
+    ],
+    "master": 11,
+    "service_category": 2,
+    "problem_description": "Akkumulyator tez o'tirib qolyapti, ertalab yura olmayapti.",
+    "customer_latitude": "41.288435",
+    "customer_longitude": "69.265874",
+    "customer_address": "Sergeli t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "300000.00",
+    "final_price": "300000.00",
+    "created_at": "2026-05-24T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 37,
+  "fields": {
+    "customer": [
+      "mijoz22"
+    ],
+    "master": 6,
+    "service_category": 6,
+    "problem_description": "Old tormozlar g'ichirlaydi va педаль qattiq.",
+    "customer_latitude": "41.328600",
+    "customer_longitude": "69.256246",
+    "customer_address": "Mirobod t.",
+    "need_master_visit": false,
+    "status": "COMPLETED",
+    "offered_price": "100000.00",
+    "final_price": "100000.00",
+    "created_at": "2026-05-23T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 38,
+  "fields": {
+    "customer": [
+      "mijoz5"
+    ],
+    "master": 8,
+    "service_category": 9,
+    "problem_description": "G'ildiraklar bir tomonga tortyapti, rul titraydi.",
+    "customer_latitude": "41.271933",
+    "customer_longitude": "69.181616",
+    "customer_address": "Uchtepa t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "190000.00",
+    "final_price": "190000.00",
+    "created_at": "2026-05-26T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 39,
+  "fields": {
+    "customer": [
+      "mijoz6"
+    ],
+    "master": 3,
+    "service_category": 12,
+    "problem_description": "Faralar xira yonadi, biri umuman ishlamaydi.",
+    "customer_latitude": "41.278946",
+    "customer_longitude": "69.372143",
+    "customer_address": "Olmazor t.",
+    "need_master_visit": false,
+    "status": "COMPLETED",
+    "offered_price": "190000.00",
+    "final_price": "190000.00",
+    "created_at": "2026-06-10T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 40,
+  "fields": {
+    "customer": [
+      "mijoz7"
+    ],
+    "master": 13,
+    "service_category": 4,
+    "problem_description": "Mashina yurganda old tomondan taqillagan ovoz keladi.",
+    "customer_latitude": "41.292099",
+    "customer_longitude": "69.251529",
+    "customer_address": "Olmazor t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "200000.00",
+    "final_price": "200000.00",
+    "created_at": "2026-06-11T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 41,
+  "fields": {
+    "customer": [
+      "mijoz1"
+    ],
+    "master": 22,
+    "service_category": 9,
+    "problem_description": "Dvigatel ishlaganda g'alati ovoz chiqyapti, quvvati pasaygan.",
+    "customer_latitude": "41.321630",
+    "customer_longitude": "69.316897",
+    "customer_address": "Yunusobod t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "170000.00",
+    "final_price": "170000.00",
+    "created_at": "2026-05-29T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 42,
+  "fields": {
+    "customer": [
+      "mijoz27"
+    ],
+    "master": 10,
+    "service_category": 8,
+    "problem_description": "Faralar xira yonadi, biri umuman ishlamaydi.",
+    "customer_latitude": "41.359390",
+    "customer_longitude": "69.223538",
+    "customer_address": "Sergeli t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "290000.00",
+    "final_price": "290000.00",
+    "created_at": "2026-06-21T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 43,
+  "fields": {
+    "customer": [
+      "mijoz21"
+    ],
+    "master": 4,
+    "service_category": 2,
+    "problem_description": "Akkumulyator tez o'tirib qolyapti, ertalab yura olmayapti.",
+    "customer_latitude": "41.357259",
+    "customer_longitude": "69.186410",
+    "customer_address": "Yakkasaroy t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "250000.00",
+    "final_price": "250000.00",
+    "created_at": "2026-06-24T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 44,
+  "fields": {
+    "customer": [
+      "mijoz30"
+    ],
+    "master": 10,
+    "service_category": 14,
+    "problem_description": "Konditsioner sovutmayapti, faqat issiq havo puflaydi.",
+    "customer_latitude": "41.263208",
+    "customer_longitude": "69.337040",
+    "customer_address": "Yakkasaroy t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "150000.00",
+    "final_price": "150000.00",
+    "created_at": "2026-06-12T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 45,
+  "fields": {
+    "customer": [
+      "mijoz27"
+    ],
+    "master": 6,
+    "service_category": 16,
+    "problem_description": "Shina yorilди, zaxira qo'yish va balanslash kerak.",
+    "customer_latitude": "41.278304",
+    "customer_longitude": "69.353816",
+    "customer_address": "Chilonzor t.",
+    "need_master_visit": false,
+    "status": "COMPLETED",
+    "offered_price": "130000.00",
+    "final_price": "130000.00",
+    "created_at": "2026-06-25T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 46,
+  "fields": {
+    "customer": [
+      "mijoz5"
+    ],
+    "master": 25,
+    "service_category": 13,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.359815",
+    "customer_longitude": "69.252892",
+    "customer_address": "Shayxontohur t.",
+    "need_master_visit": false,
+    "status": "COMPLETED",
+    "offered_price": "120000.00",
+    "final_price": "120000.00",
+    "created_at": "2026-05-26T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 47,
+  "fields": {
+    "customer": [
+      "mijoz4"
+    ],
+    "master": 15,
+    "service_category": 9,
+    "problem_description": "Faralar xira yonadi, biri umuman ishlamaydi.",
+    "customer_latitude": "41.292045",
+    "customer_longitude": "69.307447",
+    "customer_address": "Yakkasaroy t.",
+    "need_master_visit": false,
+    "status": "COMPLETED",
+    "offered_price": "160000.00",
+    "final_price": "160000.00",
+    "created_at": "2026-06-15T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 48,
+  "fields": {
+    "customer": [
+      "mijoz16"
+    ],
+    "master": 1,
+    "service_category": 18,
+    "problem_description": "Dvigatel chizig'i (check) yonib turibdi.",
+    "customer_latitude": "41.377522",
+    "customer_longitude": "69.224010",
+    "customer_address": "Chilonzor t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "240000.00",
+    "final_price": "240000.00",
+    "created_at": "2026-05-31T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 49,
+  "fields": {
+    "customer": [
+      "mijoz30"
+    ],
+    "master": 23,
+    "service_category": 14,
+    "problem_description": "Old tormozlar g'ichirlaydi va педаль qattiq.",
+    "customer_latitude": "41.253445",
+    "customer_longitude": "69.368989",
+    "customer_address": "Olmazor t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "140000.00",
+    "final_price": "140000.00",
+    "created_at": "2026-06-22T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 50,
+  "fields": {
+    "customer": [
+      "mijoz4"
+    ],
+    "master": 8,
+    "service_category": 5,
+    "problem_description": "Korobka передачa o'tkazganda silkinadi.",
+    "customer_latitude": "41.303664",
+    "customer_longitude": "69.313834",
+    "customer_address": "Bektemir t.",
+    "need_master_visit": false,
+    "status": "COMPLETED",
+    "offered_price": "220000.00",
+    "final_price": "220000.00",
+    "created_at": "2026-06-20T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 51,
+  "fields": {
+    "customer": [
+      "mijoz29"
+    ],
+    "master": 14,
+    "service_category": 4,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.309377",
+    "customer_longitude": "69.261360",
+    "customer_address": "Olmazor t.",
+    "need_master_visit": false,
+    "status": "COMPLETED",
+    "offered_price": "250000.00",
+    "final_price": "250000.00",
+    "created_at": "2026-06-06T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 52,
+  "fields": {
+    "customer": [
+      "mijoz7"
+    ],
+    "master": 15,
+    "service_category": 8,
+    "problem_description": "Vibratsiya bor, ayniqsa tezlikda kuchayadi.",
+    "customer_latitude": "41.289111",
+    "customer_longitude": "69.375923",
+    "customer_address": "Yakkasaroy t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "190000.00",
+    "final_price": "190000.00",
+    "created_at": "2026-06-07T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 53,
+  "fields": {
+    "customer": [
+      "mijoz2"
+    ],
+    "master": 13,
+    "service_category": 7,
+    "problem_description": "Old tormozlar g'ichirlaydi va педаль qattiq.",
+    "customer_latitude": "41.382923",
+    "customer_longitude": "69.344575",
+    "customer_address": "Chilonzor t.",
+    "need_master_visit": true,
+    "status": "COMPLETED",
+    "offered_price": "130000.00",
+    "final_price": "130000.00",
+    "created_at": "2026-05-22T19:52:32.281Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 54,
+  "fields": {
+    "customer": [
+      "mijoz1"
+    ],
+    "master": null,
+    "service_category": 5,
+    "problem_description": "haaaaaaaaaaaaaaaaaa",
+    "customer_latitude": "41.311081",
+    "customer_longitude": "69.240562",
+    "customer_address": "Qorasu-6",
+    "need_master_visit": false,
+    "status": "PENDING",
+    "offered_price": "150000.00",
+    "final_price": null,
+    "created_at": "2026-06-30T20:02:58.570Z"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "image": "problem_images/demo_1_0.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "image": "problem_images/demo_2_1.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 3,
+  "fields": {
+    "order": 2,
+    "image": "problem_images/demo_2_2.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 4,
+  "fields": {
+    "order": 3,
+    "image": "problem_images/demo_3_3.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 5,
+  "fields": {
+    "order": 3,
+    "image": "problem_images/demo_3_4.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 6,
+  "fields": {
+    "order": 4,
+    "image": "problem_images/demo_4_5.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 7,
+  "fields": {
+    "order": 5,
+    "image": "problem_images/demo_5_6.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 8,
+  "fields": {
+    "order": 5,
+    "image": "problem_images/demo_5_7.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 9,
+  "fields": {
+    "order": 7,
+    "image": "problem_images/demo_7_8.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 10,
+  "fields": {
+    "order": 8,
+    "image": "problem_images/demo_8_9.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 11,
+  "fields": {
+    "order": 8,
+    "image": "problem_images/demo_8_10.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 12,
+  "fields": {
+    "order": 9,
+    "image": "problem_images/demo_9_11.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 13,
+  "fields": {
+    "order": 9,
+    "image": "problem_images/demo_9_12.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 14,
+  "fields": {
+    "order": 10,
+    "image": "problem_images/demo_10_13.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 15,
+  "fields": {
+    "order": 11,
+    "image": "problem_images/demo_11_14.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 16,
+  "fields": {
+    "order": 12,
+    "image": "problem_images/demo_12_15.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 17,
+  "fields": {
+    "order": 12,
+    "image": "problem_images/demo_12_16.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 18,
+  "fields": {
+    "order": 13,
+    "image": "problem_images/demo_13_17.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 19,
+  "fields": {
+    "order": 13,
+    "image": "problem_images/demo_13_18.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 20,
+  "fields": {
+    "order": 14,
+    "image": "problem_images/demo_14_19.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 21,
+  "fields": {
+    "order": 15,
+    "image": "problem_images/demo_15_20.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 22,
+  "fields": {
+    "order": 15,
+    "image": "problem_images/demo_15_21.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 23,
+  "fields": {
+    "order": 17,
+    "image": "problem_images/demo_17_22.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 24,
+  "fields": {
+    "order": 17,
+    "image": "problem_images/demo_17_23.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 25,
+  "fields": {
+    "order": 20,
+    "image": "problem_images/demo_20_24.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 26,
+  "fields": {
+    "order": 20,
+    "image": "problem_images/demo_20_25.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 27,
+  "fields": {
+    "order": 21,
+    "image": "problem_images/demo_21_26.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 28,
+  "fields": {
+    "order": 21,
+    "image": "problem_images/demo_21_27.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 29,
+  "fields": {
+    "order": 22,
+    "image": "problem_images/demo_22_28.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 30,
+  "fields": {
+    "order": 24,
+    "image": "problem_images/demo_24_29.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 31,
+  "fields": {
+    "order": 24,
+    "image": "problem_images/demo_24_30.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 32,
+  "fields": {
+    "order": 26,
+    "image": "problem_images/demo_26_31.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 33,
+  "fields": {
+    "order": 28,
+    "image": "problem_images/demo_28_32.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 34,
+  "fields": {
+    "order": 28,
+    "image": "problem_images/demo_28_33.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 35,
+  "fields": {
+    "order": 29,
+    "image": "problem_images/demo_29_34.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 36,
+  "fields": {
+    "order": 29,
+    "image": "problem_images/demo_29_35.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 37,
+  "fields": {
+    "order": 31,
+    "image": "problem_images/demo_31_36.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 38,
+  "fields": {
+    "order": 33,
+    "image": "problem_images/demo_33_37.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 39,
+  "fields": {
+    "order": 33,
+    "image": "problem_images/demo_33_38.jpg"
+  }
+},
+{
+  "model": "orders.carproblemimage",
+  "pk": 40,
+  "fields": {
+    "order": 34,
+    "image": "problem_images/demo_34_39.jpg"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 1,
+  "fields": {
+    "customer": [
+      "mijoz23"
+    ],
+    "master": 5,
+    "order": 5,
+    "rating": 3,
+    "comment": "Juda tez keldi va muammoni hal qildi. Narx adolatli, rahmat!",
+    "created_at": "2026-06-30T19:52:32.396Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "customer": [
+      "mijoz12"
+    ],
+    "master": 23,
+    "order": 11,
+    "rating": 4,
+    "comment": "Hammasi joyida, kafolat ham berdi. Tavsiya qilaman.",
+    "created_at": "2026-06-30T19:52:32.398Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 3,
+  "fields": {
+    "customer": [
+      "mijoz8"
+    ],
+    "master": 25,
+    "order": 17,
+    "rating": 3,
+    "comment": "Aloqaga juda yaqin, hamma narsani tushuntirib berdi.",
+    "created_at": "2026-06-30T19:52:32.400Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 4,
+  "fields": {
+    "customer": [
+      "mijoz24"
+    ],
+    "master": 11,
+    "order": 23,
+    "rating": 5,
+    "comment": "Muammoni boshqalar topa olmagandi, bu usta topdi.",
+    "created_at": "2026-06-30T19:52:32.402Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 5,
+  "fields": {
+    "customer": [
+      "mijoz7"
+    ],
+    "master": 9,
+    "order": 28,
+    "rating": 5,
+    "comment": "Hammasi joyida, kafolat ham berdi. Tavsiya qilaman.",
+    "created_at": "2026-06-30T19:52:32.403Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 6,
+  "fields": {
+    "customer": [
+      "mijoz7"
+    ],
+    "master": 20,
+    "order": 31,
+    "rating": 4,
+    "comment": "Hammasi joyida, kafolat ham berdi. Tavsiya qilaman.",
+    "created_at": "2026-06-30T19:52:32.405Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 7,
+  "fields": {
+    "customer": [
+      "mijoz2"
+    ],
+    "master": 11,
+    "order": 36,
+    "rating": 5,
+    "comment": "Ish sifatli, lekin biroz kech keldi. Umuman mamnunman.",
+    "created_at": "2026-06-30T19:52:32.406Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 8,
+  "fields": {
+    "customer": [
+      "mijoz22"
+    ],
+    "master": 6,
+    "order": 37,
+    "rating": 4,
+    "comment": "Aloqaga juda yaqin, hamma narsani tushuntirib berdi.",
+    "created_at": "2026-06-30T19:52:32.408Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 9,
+  "fields": {
+    "customer": [
+      "mijoz5"
+    ],
+    "master": 8,
+    "order": 38,
+    "rating": 5,
+    "comment": "Ish sifatli, lekin biroz kech keldi. Umuman mamnunman.",
+    "created_at": "2026-06-30T19:52:32.409Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 10,
+  "fields": {
+    "customer": [
+      "mijoz6"
+    ],
+    "master": 3,
+    "order": 39,
+    "rating": 3,
+    "comment": "Muammoni boshqalar topa olmagandi, bu usta topdi.",
+    "created_at": "2026-06-30T19:52:32.411Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 11,
+  "fields": {
+    "customer": [
+      "mijoz7"
+    ],
+    "master": 13,
+    "order": 40,
+    "rating": 5,
+    "comment": "Ish sifatli, lekin biroz kech keldi. Umuman mamnunman.",
+    "created_at": "2026-06-30T19:52:32.412Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 12,
+  "fields": {
+    "customer": [
+      "mijoz1"
+    ],
+    "master": 22,
+    "order": 41,
+    "rating": 5,
+    "comment": "Juda tez keldi va muammoni hal qildi. Narx adolatli, rahmat!",
+    "created_at": "2026-06-30T19:52:32.414Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 13,
+  "fields": {
+    "customer": [
+      "mijoz27"
+    ],
+    "master": 10,
+    "order": 42,
+    "rating": 5,
+    "comment": "Narxi arzon emas, lekin sifat shunga yarasha.",
+    "created_at": "2026-06-30T19:52:32.416Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 14,
+  "fields": {
+    "customer": [
+      "mijoz21"
+    ],
+    "master": 4,
+    "order": 43,
+    "rating": 4,
+    "comment": "Hammasi joyida, kafolat ham berdi. Tavsiya qilaman.",
+    "created_at": "2026-06-30T19:52:32.418Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 15,
+  "fields": {
+    "customer": [
+      "mijoz30"
+    ],
+    "master": 10,
+    "order": 44,
+    "rating": 5,
+    "comment": "Juda tez keldi va muammoni hal qildi. Narx adolatli, rahmat!",
+    "created_at": "2026-06-30T19:52:32.419Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 16,
+  "fields": {
+    "customer": [
+      "mijoz27"
+    ],
+    "master": 6,
+    "order": 45,
+    "rating": 5,
+    "comment": "Juda tez keldi va muammoni hal qildi. Narx adolatli, rahmat!",
+    "created_at": "2026-06-30T19:52:32.420Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 17,
+  "fields": {
+    "customer": [
+      "mijoz5"
+    ],
+    "master": 25,
+    "order": 46,
+    "rating": 5,
+    "comment": "Yo'lda qoldim, 20 daqiqada yetib keldi. Rahmat!",
+    "created_at": "2026-06-30T19:52:32.422Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 18,
+  "fields": {
+    "customer": [
+      "mijoz4"
+    ],
+    "master": 15,
+    "order": 47,
+    "rating": 5,
+    "comment": "Kichik kamchilik bor edi, lekin qayta to'g'irlab berdi.",
+    "created_at": "2026-06-30T19:52:32.423Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 19,
+  "fields": {
+    "customer": [
+      "mijoz16"
+    ],
+    "master": 1,
+    "order": 48,
+    "rating": 5,
+    "comment": "Toza ishladi, mashinani top holatda qaytarib berdi.",
+    "created_at": "2026-06-30T19:52:32.425Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 20,
+  "fields": {
+    "customer": [
+      "mijoz30"
+    ],
+    "master": 23,
+    "order": 49,
+    "rating": 4,
+    "comment": "Muammoni boshqalar topa olmagandi, bu usta topdi.",
+    "created_at": "2026-06-30T19:52:32.426Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 21,
+  "fields": {
+    "customer": [
+      "mijoz4"
+    ],
+    "master": 8,
+    "order": 50,
+    "rating": 5,
+    "comment": "Toza ishladi, mashinani top holatda qaytarib berdi.",
+    "created_at": "2026-06-30T19:52:32.428Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 22,
+  "fields": {
+    "customer": [
+      "mijoz29"
+    ],
+    "master": 14,
+    "order": 51,
+    "rating": 5,
+    "comment": "Aloqaga juda yaqin, hamma narsani tushuntirib berdi.",
+    "created_at": "2026-06-30T19:52:32.429Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 23,
+  "fields": {
+    "customer": [
+      "mijoz7"
+    ],
+    "master": 15,
+    "order": 52,
+    "rating": 5,
+    "comment": "Tez, sifatli va halol. 5 ball.",
+    "created_at": "2026-06-30T19:52:32.431Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 24,
+  "fields": {
+    "customer": [
+      "mijoz2"
+    ],
+    "master": 13,
+    "order": 53,
+    "rating": 5,
+    "comment": "Toza ishladi, mashinani top holatda qaytarib berdi.",
+    "created_at": "2026-06-30T19:52:32.433Z"
+  }
+}
+]

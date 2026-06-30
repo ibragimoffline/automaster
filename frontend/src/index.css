@@ -1,0 +1,278 @@
+/* ============================================================
+   AUTOMASTER — Diagnostika / asboblar paneli dizayn tizimi
+   Display: Archivo · Body: IBM Plex Sans · Data: IBM Plex Mono
+   ============================================================ */
+
+:root {
+  /* —— Rang tokenlari —— */
+  --ink:        #0E1726;  /* dvigatel soyasi — qorong'i fon va matn */
+  --ink-2:      #16213A;  /* ko'tarilgan qorong'i sirt */
+  --ink-3:      #223150;  /* chegara qorong'i fonda */
+  --cobalt:     #2348F0;  /* diagnostika ko'k — asosiy amal/ishonch */
+  --cobalt-700: #1A35C2;  /* hover/bosilgan */
+  --cobalt-100: #E5EAFE;  /* yumshoq fon */
+  --amber:      #FFB200;  /* signal/avariya chirog'i — holat, reyting */
+  --amber-700:  #C77F00;  /* amber matn (kontrast uchun) */
+  --amber-100:  #FFF1CC;
+  --success:    #12A150;
+  --success-100:#DCF4E6;
+  --danger:     #E5484D;
+  --danger-100: #FCE5E6;
+
+  --paper:      #F1F3F6;  /* sayqallangan metall ochiq fon */
+  --surface:    #FFFFFF;
+  --surface-2:  #FAFBFD;
+  --line:       #E2E6EC;  /* chegara */
+  --line-2:     #D2D8E2;
+
+  --text:       #0E1726;
+  --text-2:     #4A576B;  /* ikkilamchi */
+  --text-3:     #7C879A;  /* uchlamchi/caption */
+  --on-cobalt:  #FFFFFF;
+  --on-ink:     #E8ECF4;
+
+  /* —— Tipografika —— */
+  --font-display: 'Archivo', system-ui, sans-serif;
+  --font-body:    'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
+
+  /* —— Radius / elevatsiya —— */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 26px;
+  --shadow-sm: 0 1px 2px rgba(14,23,38,.06), 0 1px 1px rgba(14,23,38,.04);
+  --shadow-md: 0 6px 20px rgba(14,23,38,.08), 0 2px 6px rgba(14,23,38,.05);
+  --shadow-lg: 0 20px 50px rgba(14,23,38,.16), 0 8px 18px rgba(14,23,38,.08);
+  --shadow-cobalt: 0 12px 30px rgba(35,72,240,.28);
+
+  /* —— Layout —— */
+  --container: 1200px;
+  --nav-h: 68px;
+  --bottomnav-h: 64px;
+
+  /* —— Motion —— */
+  --ease: cubic-bezier(.2,.7,.2,1);
+  --dur: 220ms;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; overflow-x: hidden; }
+#root { overflow-x: clip; max-width: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin: 0;
+  color: var(--text);
+}
+
+p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { font-family: inherit; cursor: pointer; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+/* Mono ma'lumot — asbob o'qishlari (narx/km/reyting/kod) */
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: 'tnum' 1;
+  letter-spacing: -0.01em;
+}
+
+/* Eyebrow / label — sanoat belgisi uslubi */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+/* —— Layout yordamchilari —— */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: 22px;
+}
+.section { padding-block: clamp(56px, 8vw, 104px); }
+.stack { display: flex; flex-direction: column; }
+.row { display: flex; align-items: center; }
+.spacer { flex: 1; }
+
+/* —— Tugmalar —— */
+.btn {
+  --bg: var(--cobalt);
+  --fg: var(--on-cobalt);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  height: 48px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: var(--r-md);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease),
+              background var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.btn:hover { background: var(--cobalt-700); box-shadow: var(--shadow-cobalt); }
+.btn:active { transform: translateY(1px); }
+.btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+.btn--block { width: 100%; }
+.btn--lg { height: 56px; padding: 0 30px; font-size: 16px; }
+.btn--sm { height: 40px; padding: 0 16px; font-size: 14px; }
+.btn--ghost { --bg: transparent; --fg: var(--text); border-color: var(--line-2); }
+.btn--ghost:hover { background: var(--surface-2); box-shadow: none; border-color: var(--text-3); }
+.btn--amber { --bg: var(--amber); --fg: var(--ink); }
+.btn--amber:hover { background: #ffbf26; box-shadow: 0 12px 30px rgba(255,178,0,.3); }
+.btn--danger { --bg: var(--danger); --fg: #fff; }
+.btn--danger:hover { background: #cf3a3f; box-shadow: 0 12px 30px rgba(229,72,77,.3); }
+.btn:disabled { opacity: .5; pointer-events: none; }
+.btn--onink { --bg: #fff; --fg: var(--ink); }
+.btn--onink:hover { background: #fff; box-shadow: 0 12px 30px rgba(0,0,0,.35); }
+
+/* —— Kartalar —— */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+/* —— Badge / chip —— */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: var(--cobalt-100);
+  color: var(--cobalt-700);
+  white-space: nowrap;
+}
+.badge--verified { background: var(--cobalt-100); color: var(--cobalt-700); }
+.badge--visit { background: var(--amber-100); color: var(--amber-700); }
+.badge--muted { background: var(--paper); color: var(--text-2); }
+.badge svg { width: 13px; height: 13px; }
+
+/* —— Form maydonlari —— */
+.field { display: flex; flex-direction: column; gap: 7px; }
+.field > label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-2);
+}
+.field .req { color: var(--danger); }
+.field .hint { font-size: 12.5px; color: var(--text-3); }
+.field .err { font-size: 12.5px; color: var(--danger); font-weight: 500; }
+.input, .textarea, .select {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+  transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.input { height: 48px; }
+.textarea { min-height: 112px; resize: vertical; line-height: 1.5; }
+.input:focus, .textarea:focus, .select:focus {
+  outline: none;
+  border-color: var(--cobalt);
+  box-shadow: 0 0 0 3px var(--cobalt-100);
+}
+.input::placeholder, .textarea::placeholder { color: var(--text-3); }
+.field--err .input, .field--err .textarea { border-color: var(--danger); }
+
+/* —— Skeleton —— */
+.skeleton {
+  background: linear-gradient(100deg, var(--line) 30%, #eef1f5 50%, var(--line) 70%);
+  background-size: 200% 100%;
+  border-radius: var(--r-sm);
+  animation: shimmer 1.3s infinite linear;
+}
+@keyframes shimmer { to { background-position: -200% 0; } }
+
+/* —— Toast —— */
+.toast-wrap {
+  position: fixed; z-index: 1000; left: 50%; bottom: 86px;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; gap: 8px; width: min(420px, 92vw);
+}
+.toast {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--ink); color: var(--on-ink);
+  border: 1px solid var(--ink-3);
+  border-left: 4px solid var(--cobalt);
+  padding: 12px 14px; border-radius: var(--r-md);
+  box-shadow: var(--shadow-lg);
+  animation: toastIn var(--dur) var(--ease);
+}
+.toast--success { border-left-color: var(--success); }
+.toast--error { border-left-color: var(--danger); }
+.toast svg { width: 18px; height: 18px; flex: none; }
+@keyframes toastIn { from { opacity: 0; transform: translateY(12px); } }
+
+/* —— Empty state —— */
+.empty {
+  text-align: center; padding: 48px 24px; color: var(--text-2);
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+.empty .empty__icon {
+  width: 56px; height: 56px; border-radius: 16px;
+  display: grid; place-items: center;
+  background: var(--cobalt-100); color: var(--cobalt);
+}
+
+/* —— Erişebilirlik —— */
+:focus-visible { outline: 3px solid var(--cobalt); outline-offset: 2px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.skip-link {
+  position: absolute; left: 12px; top: -60px; z-index: 1100;
+  background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 10px;
+  transition: top var(--dur) var(--ease);
+}
+.skip-link:focus { top: 12px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
