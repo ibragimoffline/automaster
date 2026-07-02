@@ -63,7 +63,6 @@ class OrderSerializer(serializers.ModelSerializer):
         return obj.status in CONTACT_UNLOCKED_STATUSES
 
     def get_customer_phone(self, obj):
-        """Mijoz raqami: mijozning o'ziga doim; ustaga faqat qabul qilingach."""
         user = self._request_user()
         if not user or not user.is_authenticated:
             return None
@@ -75,7 +74,6 @@ class OrderSerializer(serializers.ModelSerializer):
         return None
 
     def get_master_phone(self, obj):
-        """Usta raqami: ustaning o'ziga doim; mijozga faqat qabul qilingach."""
         user = self._request_user()
         if not user or not user.is_authenticated or obj.master is None:
             return None
@@ -90,8 +88,8 @@ class OrderSerializer(serializers.ModelSerializer):
         price_to = attrs.get('final_price')
 
         if price_from is not None and price_from < 0:
-            raise serializers.ValidationError({'offered_price': 'Price cannot be negative.'})
+            raise serializers.ValidationError({'offered_price': 'Narx manfiy bo\'lishi mumkin emas'})
         if price_to is not None and price_to < 0:
-            raise serializers.ValidationError({'final_price': 'Price cannot be negative.'})
+            raise serializers.ValidationError({'final_price': 'Narx manfiy bo\'lishi mumkin emas'})
 
         return attrs
