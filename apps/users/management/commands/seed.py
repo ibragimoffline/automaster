@@ -25,7 +25,7 @@ from apps.reviews.models import Review
 User = get_user_model()
 PASSWORD = 'parol1234'
 
-# Toshkent markazi ~ (41.311, 69.279); ustalar shu atrofda tarqatiladi.
+
 TASHKENT = (41.311081, 69.279737)
 DISTRICTS = [
     'Yunusobod', 'Chilonzor', 'Mirzo Ulug\'bek', 'Sergeli', 'Olmazor',

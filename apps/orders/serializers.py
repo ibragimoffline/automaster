@@ -14,7 +14,7 @@ class CarProblemImageSerializer(serializers.ModelSerializer):
         read_only_fields = ['id']
 
 
-# Aloqa ma'lumotlari faqat shu holatlarda ochiladi (buyurtma qabul qilingandan keyin)
+
 CONTACT_UNLOCKED_STATUSES = ('ACCEPTED', 'ON_THE_WAY', 'IN_PROGRESS', 'COMPLETED')
 
 
@@ -23,7 +23,7 @@ class OrderSerializer(serializers.ModelSerializer):
     customer_username = serializers.CharField(source='customer.username', read_only=True)
     master_name = serializers.CharField(source='master.full_name', read_only=True)
     service_category_name = serializers.CharField(source='service_category.name', read_only=True)
-    # Aloqa: faqat buyurtma qabul qilingach va faqat qarama-qarshi tomonga ko'rinadi.
+
     contact_unlocked = serializers.SerializerMethodField()
     customer_phone = serializers.SerializerMethodField()
     master_phone = serializers.SerializerMethodField()

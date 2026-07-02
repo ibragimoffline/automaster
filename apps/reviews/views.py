@@ -9,7 +9,7 @@ from .serializers import ReviewSerializer
 
 class ReviewViewSet(viewsets.ModelViewSet):
     serializer_class = ReviewSerializer
-    # Sharhlarni ommaviy o'qish mumkin; yozish uchun avtorizatsiya kerak.
+
     permission_classes = [IsAuthenticatedOrReadOnly]
     http_method_names = ['get', 'post', 'head', 'options']
     filterset_fields = ['master']

@@ -22,7 +22,6 @@ class MeView(generics.RetrieveUpdateAPIView):
 
 
 class VerifyPhoneView(views.APIView):
-    """Soxta profillarni kamaytirish: telefon tasdiqlash (SMS o'rnida stub)."""
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):

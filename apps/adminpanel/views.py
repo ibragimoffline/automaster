@@ -44,7 +44,7 @@ class AdminUserViewSet(viewsets.ModelViewSet):
         instance.delete()
 
     def perform_update(self, serializer):
-        # Admin o'z rolini yoki aktivligini o'zgartirib qulflanib qolmasligi uchun.
+        
         if serializer.instance.id == self.request.user.id:
             data = serializer.validated_data
             if data.get('role') and data['role'] != serializer.instance.role:
@@ -114,7 +114,7 @@ class AdminReviewViewSet(viewsets.ModelViewSet):
     def perform_destroy(self, instance):
         master = instance.master
         instance.delete()
-        # Sharh o'chirilgach ustaning reytingini qayta hisoblash.
+
         from django.db.models import Avg
         agg = master.reviews.aggregate(avg=Avg('rating'), n=Count('id'))
         master.average_rating = round(agg['avg'], 2) if agg['avg'] else 0

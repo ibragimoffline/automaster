@@ -20,10 +20,10 @@ class NearbyMastersAPIView(ListAPIView):
     def get_queryset(self):
         qs = (MasterProfile.objects
               .select_related('workshop', 'user')
-              .prefetch_related('services__category')  # specialties uchun
+              .prefetch_related('services__category')
               .filter(workshop__isnull=False))
 
-        # Chiqib borish xizmati bor ustalarni alohida filter qilish: ?visiting=true
+        
         if self.request.query_params.get('visiting') == 'true':
             qs = qs.filter(can_visit_customer=True)
 
@@ -35,7 +35,7 @@ class NearbyMastersAPIView(ListAPIView):
             for m in masters:
                 m.distance_km = haversine_km(
                     lat, lng, float(m.workshop.latitude), float(m.workshop.longitude))
-            # Avval masofa bo'yicha, keyin reyting bo'yicha saralash.
+            
             masters.sort(key=lambda m: (m.distance_km, -float(m.average_rating)))
             return masters
         return qs.order_by('-average_rating')

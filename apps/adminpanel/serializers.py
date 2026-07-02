@@ -20,7 +20,7 @@ class AdminUserSerializer(serializers.ModelSerializer):
             'role', 'phone_verified', 'is_active', 'is_staff', 'is_superuser',
             'date_joined', 'orders_count', 'is_master_verified',
         ]
-        # role/holatlarni admin o'zgartira oladi; tizim maydonlari faqat o'qiladi.
+        
         read_only_fields = ['id', 'username', 'date_joined', 'is_superuser']
 
     def get_is_master_verified(self, obj):
@@ -59,7 +59,7 @@ class AdminOrderSerializer(serializers.ModelSerializer):
             'customer_address', 'need_master_visit', 'status',
             'offered_price', 'final_price', 'created_at',
         ]
-        # Admin status/master/narxni tahrirlay oladi.
+
         read_only_fields = ['id', 'customer_username', 'customer_phone', 'created_at']
 
 
