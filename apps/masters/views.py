@@ -42,7 +42,6 @@ class NearbyMastersAPIView(ListAPIView):
 
 
 class MasterDetailAPIView(RetrieveAPIView):
-    """Bitta usta profili — frontend usta sahifasi uchun."""
     serializer_class = MasterProfileSerializer
     permission_classes = [AllowAny]
     queryset = (MasterProfile.objects

@@ -20,7 +20,7 @@ export default function AdminMasters() {
       .catch(() => { setMasters([]); toast.error('Ustalar yuklanmadi'); });
   }, [verified, q, toast]);
 
-  useEffect(() => { load(); }, [verified]); // eslint-disable-line
+  useEffect(() => { load(); }, [verified]);
 
   const patch = async (m, body, okMsg) => {
     try {

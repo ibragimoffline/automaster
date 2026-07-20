@@ -15,6 +15,14 @@ db.sqlite3
 media/
 staticfiles/
 
+# Tests / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+test_media/
+
 # Frontend
 frontend/node_modules/
 frontend/dist/

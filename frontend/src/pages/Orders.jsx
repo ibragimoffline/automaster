@@ -28,7 +28,6 @@ export default function Orders() {
       .catch(() => { setOrders(isMaster ? [] : MOCK_ORDERS); setDemo(!isMaster); });
   }, [isMaster]);
 
-  // Usta uchun Faol/Tarix bo'yicha ajratish
   const shown = useMemo(() => {
     if (!orders) return null;
     if (!isMaster) return orders;
@@ -83,7 +82,6 @@ export default function Orders() {
                     </div>
                     <p className="orders__desc">{o.problem_description}</p>
                     <div className="orders__meta">
-                      {/* Usta uchun — mijoz nomi; mijoz uchun — usta nomi */}
                       <span>{isMaster ? (o.customer_username || 'Mijoz') : (o.master_name || o.master?.full_name || 'Usta tanlanmagan')}</span>
                       <span className="orders__dot" />
                       <span className="mono">{relTime(o.created_at)}</span>

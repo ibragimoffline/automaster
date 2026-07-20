@@ -1,12 +1,3 @@
-"""
-Automaster demo ma'lumotlari bilan DB'ni to'ldiradi (har bir jadval uchun 20+ qator).
-
-Ishlatish:
-    python manage.py seed          # eski demo ma'lumotni tozalab, qaytadan to'ldiradi
-    python manage.py seed --keep   # mavjudini o'chirmasdan qo'shadi
-
-Barcha demo foydalanuvchilar paroli: parol1234
-"""
 import random
 from datetime import time, timedelta
 from decimal import Decimal
@@ -159,18 +150,15 @@ class Command(BaseCommand):
             ServiceCategory.objects.all().delete()
             User.objects.filter(role__in=[User.Role.CUSTOMER, User.Role.MASTER]).delete()
 
-        # — Admin (Django admin uchun qulaylik) —
         if not User.objects.filter(is_superuser=True).exists():
             User.objects.create_superuser(
                 username='admin', password='admin12345', phone='+998900000000',
                 role=User.Role.ADMIN, phone_verified=True)
             self.stdout.write('  superuser yaratildi: admin / admin12345')
 
-        # — Kategoriyalar (20) —
         categories = [ServiceCategory.objects.create(name=n, description=d) for n, d in CATEGORIES]
         self.stdout.write(self.style.SUCCESS(f'  ServiceCategory: {len(categories)}'))
 
-        # — Mijozlar (30) —
         customers = []
         for i, fn in enumerate(CUSTOMER_FIRST):
             u = User(username=f'mijoz{i+1}', first_name=fn,
@@ -182,7 +170,6 @@ class Command(BaseCommand):
         customers = list(User.objects.filter(role=User.Role.CUSTOMER).order_by('id'))
         self.stdout.write(self.style.SUCCESS(f'  Mijoz (User): {len(customers)}'))
 
-        # — Ustalar + profil + ustaxona + xizmatlar —
         masters = []
         for i, name in enumerate(MASTER_NAMES):
             u = User(username=f'usta{i+1}', first_name=name.split()[0],
@@ -195,8 +182,8 @@ class Command(BaseCommand):
                 user=u, full_name=name,
                 experience_years=rng.randint(2, 20),
                 bio=rng.choice(BIOS),
-                is_verified=rng.random() > 0.2,            # ~80% tekshirilgan
-                can_visit_customer=rng.random() > 0.4,     # ~60% chiqib boradi
+                is_verified=rng.random() > 0.2,
+                can_visit_customer=rng.random() > 0.4,
             )
             Workshop.objects.create(
                 master=profile, name=WORKSHOP_NAMES[i],
@@ -207,7 +194,6 @@ class Command(BaseCommand):
                 open_time=time(rng.choice([8, 9]), 0),
                 close_time=time(rng.choice([18, 19, 20, 21]), 0),
             )
-            # Har bir ustaga 2–4 xizmat
             for cat in rng.sample(categories, rng.randint(2, 4)):
                 titles = SERVICE_TITLES.get(cat.name, DEFAULT_TITLES)
                 title = rng.choice(titles)
@@ -224,7 +210,6 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS(f'  Workshop: {Workshop.objects.count()}'))
         self.stdout.write(self.style.SUCCESS(f'  MasterService: {MasterService.objects.count()}'))
 
-        # — Buyurtmalar (35) —
         now = timezone.now()
         orders = []
         for i in range(35):
@@ -245,27 +230,22 @@ class Command(BaseCommand):
                 offered_price=Decimal(offered),
                 final_price=Decimal(offered + rng.randint(-3, 5) * 10000) if status == Order.Status.COMPLETED else None,
             )
-            # created_at'ni o'tmishga surish (auto_now_add bo'lgani uchun update bilan)
             Order.objects.filter(pk=o.pk).update(created_at=now - timedelta(days=rng.randint(0, 30), hours=rng.randint(0, 23)))
             orders.append(o)
         self.stdout.write(self.style.SUCCESS(f'  Order: {len(orders)}'))
 
-        # — Muammo rasmlari (fayl yuklamasdan, yo'l satri bilan) —
         img_count = 0
         for o in orders:
             for _ in range(rng.randint(0, 2)):
                 CarProblemImage.objects.create(order=o, image=f'problem_images/demo_{o.pk}_{img_count}.jpg')
                 img_count += 1
-        # Kamida 20 ta bo'lishini kafolatlash
         while img_count < 22:
             o = rng.choice(orders)
             CarProblemImage.objects.create(order=o, image=f'problem_images/demo_extra_{img_count}.jpg')
             img_count += 1
         self.stdout.write(self.style.SUCCESS(f'  CarProblemImage: {img_count}'))
 
-        # — Sharhlar (yakunlangan buyurtmalarga) —
         completed = [o for o in orders if o.status == Order.Status.COMPLETED]
-        # Yetarli sharh uchun yana yakunlangan buyurtmalar qo'shamiz
         while len(completed) < 24:
             customer = rng.choice(customers)
             master = rng.choice(masters)
@@ -298,7 +278,6 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS(f'  Order (yakuniy): {Order.objects.count()}'))
         self.stdout.write(self.style.SUCCESS(f'  Review: {rev}'))
 
-        # — Ustalar reytingini qayta hisoblash —
         for m in MasterProfile.objects.all():
             agg = m.reviews.aggregate(avg=Avg('rating'), n=Count('id'))
             m.average_rating = round(agg['avg'], 2) if agg['avg'] else 0

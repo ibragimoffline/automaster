@@ -3,7 +3,6 @@ from django.conf import settings
 from django.db import models
 from apps.masters.models import MasterProfile
 from apps.orders.models import Order
-# Create your models here.
 
 class Review(models.Model):
     customer = models.ForeignKey(

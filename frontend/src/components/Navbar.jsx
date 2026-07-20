@@ -7,9 +7,8 @@ import { useAuth } from '../auth/AuthContext';
 
 const REGIONS = ['Toshkent', 'Samarqand', 'Buxoro', 'Andijon', 'Farg\'ona', 'Namangan'];
 
-// Backend ulanganini ko'rsatuvchi kichik indikator
 function ApiStatus() {
-  const [state, setState] = useState('checking'); // checking | online | demo
+  const [state, setState] = useState('checking');
   useEffect(() => {
     let alive = true;
     api.ping()

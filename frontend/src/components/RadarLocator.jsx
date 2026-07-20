@@ -1,10 +1,6 @@
 import { useMemo } from 'react';
 import { MapPin } from 'lucide-react';
 
-// ——— Lokator paneli ———
-// Haqiqiy xarita o'rniga mavzuga mos radar: yaqin atrofdagi ustalarni masofa
-// halqalarida ko'rsatadi (haversine "nearby" backend funksiyasiga bog'langan).
-// Pinlar masofa bo'yicha radiusda, indeks bo'yicha burchakda joylashtiriladi.
 export default function RadarLocator({ masters = [], activeId, onPick, sweep = true, compact = false }) {
   const maxKm = useMemo(
     () => Math.max(5, ...masters.map((m) => m.distance_km || 0)),
@@ -13,7 +9,6 @@ export default function RadarLocator({ masters = [], activeId, onPick, sweep = t
 
   const pins = masters.slice(0, 8).map((m, i) => {
     const r = 0.16 + 0.78 * Math.min(1, (m.distance_km || (i + 1)) / maxKm);
-    // Indeks bo'yicha tarqatilgan burchak (oltin burchak — yopishib qolmasligi uchun)
     const angle = (i * 137.5 - 90) * (Math.PI / 180);
     const cx = 50 + Math.cos(angle) * r * 42;
     const cy = 50 + Math.sin(angle) * r * 42;
@@ -41,7 +36,6 @@ export default function RadarLocator({ masters = [], activeId, onPick, sweep = t
             <path d="M50 50 L50 4 A46 46 0 0 1 92 38 Z" fill="#2348F0" opacity="0.08" />
           </g>
         )}
-        {/* foydalanuvchi markazi */}
         <circle cx="50" cy="50" r="3.2" fill="var(--cobalt)" />
         <circle cx="50" cy="50" r="3.2" fill="none" stroke="var(--cobalt)" strokeWidth="0.6" className="radar__ping" />
       </svg>

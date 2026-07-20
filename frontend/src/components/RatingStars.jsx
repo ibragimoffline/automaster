@@ -1,6 +1,5 @@
 import { Star } from 'lucide-react';
 
-// Reyting — amber yulduzlar + mono qiymat (asbob o'qishi uslubida).
 export default function RatingStars({ value = 0, count, size = 15, showValue = true, interactive = false, onRate }) {
   const v = Number(value) || 0;
   return (

@@ -16,12 +16,10 @@ export default function MasterDetail() {
   const [services, setServices] = useState(MOCK_SERVICES);
 
   useEffect(() => {
-    // Usta profili (real)
     api.master(id)
       .then((m) => { if (m) setMaster(m); })
       .catch(() => { if (!master) setMaster(getMockMaster(id) || getMockMaster(1)); });
 
-    // Usta xizmatlari (real)
     api.masterServices(id)
       .then((data) => {
         const list = Array.isArray(data) ? data : data?.results;
@@ -29,7 +27,6 @@ export default function MasterDetail() {
       })
       .catch(() => setServices(MOCK_SERVICES));
 
-    // Sharhlar (real)
     api.reviews(id)
       .then((data) => {
         const list = Array.isArray(data) ? data : data?.results;
@@ -49,7 +46,6 @@ export default function MasterDetail() {
         <Link to="/masters" className="backlink"><ArrowLeft size={16} /> Ustalar ro'yxati</Link>
       </div>
 
-      {/* Profil sarlavhasi */}
       <header className="mhero">
         <div className="container mhero__inner">
           <div className="mhero__avatar" aria-hidden="true">
@@ -81,7 +77,6 @@ export default function MasterDetail() {
 
       <div className="container mdetail__grid">
         <div className="mdetail__main">
-          {/* Xizmatlar */}
           <section className="block card">
             <h2 className="block__title">Xizmatlar va narxlar</h2>
             <ul className="svc-list">
@@ -103,7 +98,6 @@ export default function MasterDetail() {
             </ul>
           </section>
 
-          {/* Sharhlar */}
           <section className="block card">
             <div className="block__head">
               <h2 className="block__title">Mijozlar sharhlari</h2>
@@ -127,7 +121,6 @@ export default function MasterDetail() {
           </section>
         </div>
 
-        {/* Yon panel — ustaxona */}
         <aside className="mdetail__side">
           <div className="block card wsbox">
             <h3 className="wsbox__name">{ws.name || 'Ustaxona'}</h3>
@@ -144,7 +137,6 @@ export default function MasterDetail() {
         </aside>
       </div>
 
-      {/* Mobil yopishqoq CTA */}
       <div className="sticky-cta">
         <div>
           <span className="mono sticky-cta__rate">{Number(master.average_rating).toFixed(1)} ★</span>

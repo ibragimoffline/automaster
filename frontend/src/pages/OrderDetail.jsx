@@ -23,13 +23,11 @@ export default function OrderDetail() {
   const [order, setOrder] = useState(() => getMockOrder(id) || null);
   const [demo, setDemo] = useState(false);
 
-  // Mijoz: sharh holati
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState('');
   const [sending, setSending] = useState(false);
   const [reviewed, setReviewed] = useState(false);
 
-  // Usta: amal holati
   const [acting, setActing] = useState(false);
   const [finalPrice, setFinalPrice] = useState('');
 
@@ -91,7 +89,6 @@ export default function OrderDetail() {
         <StatusBadge status={order.status} />
       </div>
 
-      {/* IMZO: holat o'lchagichi */}
       <section className="block card odetail__track">
         <ServiceTrack status={order.status} />
       </section>
@@ -107,7 +104,6 @@ export default function OrderDetail() {
             </div>
           </section>
 
-          {/* USTA AMALLARI */}
           {isMaster && order.status === 'PENDING' && (
             <section className="block card oactions">
               <h2 className="block__title">Buyurtmani qabul qilasizmi?</h2>
@@ -133,7 +129,6 @@ export default function OrderDetail() {
             </section>
           )}
 
-          {/* MIJOZ SHARHI — faqat yakunlangan buyurtmaga */}
           {!isMaster && order.status === 'COMPLETED' && (
             <section className="block card">
               <h2 className="block__title"><MessageSquare size={18} style={{ verticalAlign: -3, marginRight: 6 }} /> Ustani baholang</h2>
@@ -156,7 +151,6 @@ export default function OrderDetail() {
           )}
         </div>
 
-        {/* Yon panel — rolega qarab: usta uchun mijoz, mijoz uchun usta */}
         <aside className="stack" style={{ gap: 18 }}>
           {isMaster ? (
             <div className="block card omaster">

@@ -23,7 +23,7 @@ export default function Masters() {
   const [visiting, setVisiting] = useState(false);
   const [verified, setVerified] = useState(false);
   const [sort, setSort] = useState('distance');
-  const [view, setView] = useState('list'); // list | map (mobil)
+  const [view, setView] = useState('list');
 
   useEffect(() => {
     setLoading(true);

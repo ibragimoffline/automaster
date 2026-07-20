@@ -28,7 +28,7 @@ export default function AdminUsers() {
       .catch(() => { setUsers([]); toast.error('Foydalanuvchilar yuklanmadi'); });
   }, [role, q, toast]);
 
-  useEffect(() => { load(); }, [role]); // eslint-disable-line
+  useEffect(() => { load(); }, [role]);
 
   const patch = async (u, body, okMsg) => {
     try {

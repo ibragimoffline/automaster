@@ -9,7 +9,6 @@ import MasterCard from '../components/MasterCard';
 import { api } from '../api/client';
 import { MOCK_CATEGORIES, MOCK_MASTERS } from '../lib/mock';
 
-// Kategoriya nomidan ikonka tanlash (real backend kategoriyalari uchun)
 function pickIcon(name = '') {
   const n = name.toLowerCase();
   if (n.includes('dvigatel') || n.includes('moy')) return Cog;
@@ -57,7 +56,6 @@ export default function Landing() {
 
   return (
     <div className="landing">
-      {/* ——— HERO ——— */}
       <section className="hero">
         <div className="container hero__grid">
           <div className="hero__copy">
@@ -127,7 +125,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ——— KATEGORIYALAR ——— */}
       <section className="section cats">
         <div className="container">
           <div className="sec-head">
@@ -153,7 +150,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ——— QANDAY ISHLAYDI (haqiqiy ketma-ketlik → raqamlangan) ——— */}
       <section className="section how" id="qanday">
         <div className="container">
           <div className="sec-head sec-head--center">
@@ -172,7 +168,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ——— TANLANGAN USTALAR ——— */}
       <section className="section feat">
         <div className="container">
           <div className="sec-head">
@@ -188,7 +183,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ——— ISHONCH / XAVFSIZLIK ——— */}
       <section className="section trust" id="trust">
         <div className="container trust__inner">
           <div className="trust__copy">
@@ -230,7 +224,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ——— USTA BO'LISH CTA ——— */}
       <section className="section">
         <div className="container">
           <div className="cta">

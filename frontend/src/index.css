@@ -1,42 +1,37 @@
-/* ============================================================
-   AUTOMASTER — Diagnostika / asboblar paneli dizayn tizimi
-   Display: Archivo · Body: IBM Plex Sans · Data: IBM Plex Mono
-   ============================================================ */
-
 :root {
-  /* —— Rang tokenlari —— */
-  --ink:        #0E1726;  /* dvigatel soyasi — qorong'i fon va matn */
-  --ink-2:      #16213A;  /* ko'tarilgan qorong'i sirt */
-  --ink-3:      #223150;  /* chegara qorong'i fonda */
-  --cobalt:     #2348F0;  /* diagnostika ko'k — asosiy amal/ishonch */
-  --cobalt-700: #1A35C2;  /* hover/bosilgan */
-  --cobalt-100: #E5EAFE;  /* yumshoq fon */
-  --amber:      #FFB200;  /* signal/avariya chirog'i — holat, reyting */
-  --amber-700:  #C77F00;  /* amber matn (kontrast uchun) */
+
+  --ink:        #0E1726;
+  --ink-2:      #16213A;
+  --ink-3:      #223150;
+  --cobalt:     #2348F0;
+  --cobalt-700: #1A35C2;
+  --cobalt-100: #E5EAFE;
+  --amber:      #FFB200;
+  --amber-700:  #C77F00;
   --amber-100:  #FFF1CC;
   --success:    #12A150;
   --success-100:#DCF4E6;
   --danger:     #E5484D;
   --danger-100: #FCE5E6;
 
-  --paper:      #F1F3F6;  /* sayqallangan metall ochiq fon */
+  --paper:      #F1F3F6;
   --surface:    #FFFFFF;
   --surface-2:  #FAFBFD;
-  --line:       #E2E6EC;  /* chegara */
+  --line:       #E2E6EC;
   --line-2:     #D2D8E2;
 
   --text:       #0E1726;
-  --text-2:     #4A576B;  /* ikkilamchi */
-  --text-3:     #7C879A;  /* uchlamchi/caption */
+  --text-2:     #4A576B;
+  --text-3:     #7C879A;
   --on-cobalt:  #FFFFFF;
   --on-ink:     #E8ECF4;
 
-  /* —— Tipografika —— */
+
   --font-display: 'Archivo', system-ui, sans-serif;
   --font-body:    'IBM Plex Sans', system-ui, sans-serif;
   --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
 
-  /* —— Radius / elevatsiya —— */
+
   --r-sm: 8px;
   --r-md: 12px;
   --r-lg: 18px;
@@ -46,12 +41,12 @@
   --shadow-lg: 0 20px 50px rgba(14,23,38,.16), 0 8px 18px rgba(14,23,38,.08);
   --shadow-cobalt: 0 12px 30px rgba(35,72,240,.28);
 
-  /* —— Layout —— */
+
   --container: 1200px;
   --nav-h: 68px;
   --bottomnav-h: 64px;
 
-  /* —— Motion —— */
+
   --ease: cubic-bezier(.2,.7,.2,1);
   --dur: 220ms;
 }
@@ -88,14 +83,14 @@ img { max-width: 100%; display: block; }
 button { font-family: inherit; cursor: pointer; }
 ul { margin: 0; padding: 0; list-style: none; }
 
-/* Mono ma'lumot — asbob o'qishlari (narx/km/reyting/kod) */
+
 .mono {
   font-family: var(--font-mono);
   font-feature-settings: 'tnum' 1;
   letter-spacing: -0.01em;
 }
 
-/* Eyebrow / label — sanoat belgisi uslubi */
+
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -105,7 +100,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--text-3);
 }
 
-/* —— Layout yordamchilari —— */
+
 .container {
   width: 100%;
   max-width: var(--container);
@@ -117,7 +112,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .row { display: flex; align-items: center; }
 .spacer { flex: 1; }
 
-/* —— Tugmalar —— */
+
 .btn {
   --bg: var(--cobalt);
   --fg: var(--on-cobalt);
@@ -155,7 +150,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .btn--onink { --bg: #fff; --fg: var(--ink); }
 .btn--onink:hover { background: #fff; box-shadow: 0 12px 30px rgba(0,0,0,.35); }
 
-/* —— Kartalar —— */
+
 .card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -163,7 +158,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   box-shadow: var(--shadow-sm);
 }
 
-/* —— Badge / chip —— */
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -184,7 +179,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .badge--muted { background: var(--paper); color: var(--text-2); }
 .badge svg { width: 13px; height: 13px; }
 
-/* —— Form maydonlari —— */
+
 .field { display: flex; flex-direction: column; gap: 7px; }
 .field > label {
   font-size: 13.5px;
@@ -215,7 +210,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .input::placeholder, .textarea::placeholder { color: var(--text-3); }
 .field--err .input, .field--err .textarea { border-color: var(--danger); }
 
-/* —— Skeleton —— */
+
 .skeleton {
   background: linear-gradient(100deg, var(--line) 30%, #eef1f5 50%, var(--line) 70%);
   background-size: 200% 100%;
@@ -224,7 +219,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 @keyframes shimmer { to { background-position: -200% 0; } }
 
-/* —— Toast —— */
+
 .toast-wrap {
   position: fixed; z-index: 1000; left: 50%; bottom: 86px;
   transform: translateX(-50%);
@@ -244,7 +239,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .toast svg { width: 18px; height: 18px; flex: none; }
 @keyframes toastIn { from { opacity: 0; transform: translateY(12px); } }
 
-/* —— Empty state —— */
+
 .empty {
   text-align: center; padding: 48px 24px; color: var(--text-2);
   display: flex; flex-direction: column; align-items: center; gap: 12px;
@@ -255,7 +250,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   background: var(--cobalt-100); color: var(--cobalt);
 }
 
-/* —— Erişebilirlik —— */
+
 :focus-visible { outline: 3px solid var(--cobalt); outline-offset: 2px; }
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;

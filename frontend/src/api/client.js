@@ -1,5 +1,3 @@
-// Django REST API klienti — JWT (access/refresh) bilan.
-// Dev rejimda Vite proxy /api -> http://127.0.0.1:8000 ga uzatadi.
 
 const ACCESS = 'am_access';
 const REFRESH = 'am_refresh';
@@ -22,7 +20,6 @@ class ApiError extends Error {
   }
 }
 
-// Backend xato javobidan o'qiladigan birinchi xabarni chiqaradi
 function firstError(data, fallback) {
   if (!data) return fallback;
   if (typeof data === 'string') return data;
@@ -59,7 +56,6 @@ async function request(path, { method = 'GET', body, auth = true, isForm = false
     body: isForm ? body : body ? JSON.stringify(body) : undefined,
   });
 
-  // Access muddati tugagan bo'lsa — bir marta yangilab qayta urinish
   if (res.status === 401 && auth && !_retry && tokens.refresh) {
     const ok = await refreshAccess();
     if (ok) return request(path, { method, body, auth, isForm, _retry: true });
@@ -78,7 +74,6 @@ async function request(path, { method = 'GET', body, auth = true, isForm = false
 }
 
 export const api = {
-  // Auth
   login: (username, password) =>
     request('/token/', { method: 'POST', auth: false, body: { username, password } }),
   refresh: refreshAccess,
@@ -86,22 +81,18 @@ export const api = {
     request('/auth/register/', { method: 'POST', auth: false, body: payload }),
   verifyPhone: () => request('/auth/verify-phone/', { method: 'POST' }),
 
-  // Masters
   nearbyMasters: (params = {}) => {
     const q = new URLSearchParams(params).toString();
     return request(`/masters/nearby/${q ? `?${q}` : ''}`, { auth: false });
   },
   master: (id) => request(`/masters/${id}/`, { auth: false }),
 
-  // Services
   categories: () => request('/services/categories/', { auth: false }),
   masterServices: (masterId) =>
     request(`/services/${masterId ? `?master=${masterId}` : ''}`, { auth: false }),
 
-  // Sog'liq tekshiruvi — backend ulanganini bilish uchun (yengil)
   ping: () => request('/masters/nearby/?lat=41.31&lng=69.27', { auth: false }),
 
-  // —— Admin boshqaruvi ——
   adminStats: () => request('/admin/stats/'),
   adminUsers: (params = {}) => {
     const q = new URLSearchParams(params).toString();
@@ -127,20 +118,16 @@ export const api = {
   adminReviews: () => request('/admin/reviews/'),
   adminDeleteReview: (id) => request(`/admin/reviews/${id}/`, { method: 'DELETE' }),
 
-  // Orders
   myOrders: (params = {}) => {
     const q = new URLSearchParams(params).toString();
     return request(`/orders/${q ? `?${q}` : ''}`);
   },
   order: (id) => request(`/orders/${id}/`),
-  // Eslatma: CarProblemImage uchun hozircha API endpointi yo'q, shuning uchun
-  // buyurtma JSON sifatida yuboriladi (rasmlar keyingi bosqichda ulanadi).
   createOrder: (payload) => request('/orders/', { method: 'POST', body: payload }),
   acceptOrder: (id) => request(`/orders/${id}/accept/`, { method: 'POST' }),
   completeOrder: (id, final_price) =>
     request(`/orders/${id}/complete/`, { method: 'POST', body: { final_price } }),
 
-  // Reviews
   reviews: (masterId) => request(`/reviews/${masterId ? `?master=${masterId}` : ''}`, { auth: false }),
   createReview: (payload) => request('/reviews/', { method: 'POST', body: payload }),
 };

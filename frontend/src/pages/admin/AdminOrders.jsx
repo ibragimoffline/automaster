@@ -22,7 +22,7 @@ export default function AdminOrders() {
       .catch(() => { setOrders([]); toast.error('Buyurtmalar yuklanmadi'); });
   }, [status, q, toast]);
 
-  useEffect(() => { load(); }, [status]); // eslint-disable-line
+  useEffect(() => { load(); }, [status]);
 
   const changeStatus = async (o, newStatus) => {
     try {

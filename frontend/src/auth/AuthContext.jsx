@@ -3,7 +3,6 @@ import { api, tokens } from '../api/client';
 
 const AuthCtx = createContext(null);
 
-// JWT access tokenidan foydalanuvchi ma'lumotini o'qish (payloadni dekodlash)
 function decode(access) {
   try {
     const payload = JSON.parse(atob(access.split('.')[1]));
@@ -41,7 +40,6 @@ export function AuthProvider({ children }) {
   }, [persist]);
 
   const register = useCallback(async (payload) => {
-    // Register javobi to'g'ridan-to'g'ri tokenlar + foydalanuvchi ma'lumotini qaytaradi.
     const res = await api.register(payload);
     if (res?.tokens) {
       tokens.set(res.tokens);
@@ -63,7 +61,6 @@ export function AuthProvider({ children }) {
   }, [persist]);
 
   useEffect(() => {
-    // Sahifa ochilganda access muddatini jimgina yangilashga urinish
     if (tokens.refresh && !tokens.access) api.refresh().catch(() => {});
   }, []);
 

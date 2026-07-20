@@ -1,6 +1,5 @@
 from django.db import models
 from django.conf import settings
-# Create your models here.
 
 class MasterProfile(models.Model):
     user = models.OneToOneField(

@@ -1,9 +1,6 @@
 import { Check, Send, ShieldCheck, Navigation, Wrench, Flag } from 'lucide-react';
 import { STATUS_FLOW, STATUS_LABELS } from '../lib/format';
 
-// ——— IMZO ELEMENTI ———
-// Buyurtma holati asbob-o'lchagich / yo'l sifatida. Kobalt to'ldirish faol
-// bekatgacha boradi, faol bekatda amber strelka puls beradi.
 const ICONS = {
   PENDING: Send, ACCEPTED: ShieldCheck, ON_THE_WAY: Navigation,
   IN_PROGRESS: Wrench, COMPLETED: Flag,
@@ -17,10 +14,8 @@ const SUBLABEL = {
 };
 
 export default function ServiceTrack({ status, terminal }) {
-  // Bekor/rad etilgan holatlar — yo'ldan tashqari
   const isTerminalBad = status === 'CANCELLED' || status === 'REJECTED';
   const activeIndex = isTerminalBad ? -1 : STATUS_FLOW.indexOf(status);
-  // To'ldirish foizi (bekatlar orasidagi chiziq uchun)
   const fillPct = activeIndex <= 0 ? 0 : (activeIndex / (STATUS_FLOW.length - 1)) * 100;
 
   return (

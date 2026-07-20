@@ -2,7 +2,6 @@ from django.db import models
 from django.conf import settings
 from apps.masters.models import MasterProfile
 from apps.services.models import ServiceCategory
-# Create your models here.
 
 class Order(models.Model):
     class Status(models.TextChoices):

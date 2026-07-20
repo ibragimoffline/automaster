@@ -1,0 +1,34 @@
+[run]
+source =
+    apps
+    config
+branch = True
+omit =
+    */migrations/*
+    */tests/*
+    */tests.py
+    */test_*.py
+    */__pycache__/*
+    */venv/*
+    */.venv/*
+    manage.py
+    config/wsgi.py
+    config/asgi.py
+    config/settings_test.py
+    */management/commands/seed.py
+
+[report]
+show_missing = True
+skip_covered = False
+precision = 2
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    def __str__
+    raise NotImplementedError
+    if TYPE_CHECKING:
+    if __name__ == .__main__.:
+
+[html]
+directory = htmlcov
+title = Automaster — Test Coverage

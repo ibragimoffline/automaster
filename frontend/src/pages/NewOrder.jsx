@@ -119,7 +119,6 @@ export default function NewOrder() {
 
   const catName = categories.find((c) => String(c.id) === String(form.service_category))?.name;
 
-  // Usta chaqirish faqat mijozlar uchun (backend ham buni bloklaydi).
   if (user?.role === 'MASTER') {
     return (
       <div className="container neworder">
@@ -148,7 +147,6 @@ export default function NewOrder() {
         )}
       </div>
 
-      {/* Qadam indikatori */}
       <ol className="steps" aria-label="Bosqichlar">
         {STEPS.map((s, i) => (
           <li key={s} className={`steps__item ${i === step ? 'is-active' : ''} ${i < step ? 'is-done' : ''}`}>

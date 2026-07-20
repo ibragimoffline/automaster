@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import { Home, Search, PlusCircle, ClipboardList, User, History, Inbox } from 'lucide-react';
 import { useAuth } from '../auth/AuthContext';
 
-// Mobil pastki navigatsiya — rolega qarab (maks 5 element).
 export default function BottomNav() {
   const { isAuthed, user } = useAuth();
   const isMaster = user?.role === 'MASTER';

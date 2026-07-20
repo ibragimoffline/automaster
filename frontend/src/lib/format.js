@@ -1,4 +1,3 @@
-// O'zbekcha formatlash yordamchilari — narx, masofa, sana, holat.
 
 export function soum(value) {
   if (value === null || value === undefined || value === '') return '—';
@@ -33,7 +32,6 @@ export function relTime(iso) {
   return `${d.getDate()} ${UZ_MONTHS[d.getMonth()]}`;
 }
 
-// Buyurtma holati — yo'l/o'lchagich bekatlari (happy path)
 export const STATUS_FLOW = ['PENDING', 'ACCEPTED', 'ON_THE_WAY', 'IN_PROGRESS', 'COMPLETED'];
 
 export const STATUS_LABELS = {

@@ -3,8 +3,6 @@ import { BadgeCheck, MapPin, Car, Clock } from 'lucide-react';
 import RatingStars from './RatingStars';
 import { km } from '../lib/format';
 
-// Usta kartasi — ishonch signallari (tekshirilgan, reyting), masofa (mono),
-// "chiqib boradi" belgisi.
 export default function MasterCard({ master: m }) {
   const ws = m.workshop || {};
   const dist = km(m.distance_km);

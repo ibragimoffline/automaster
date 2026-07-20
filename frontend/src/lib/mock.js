@@ -1,5 +1,3 @@
-// Demo ma'lumotlari — backend bo'sh yoki ulanmagan bo'lsa, interfeys baribir
-// to'liq ko'rinishi uchun. API javob bersa, real ma'lumot ustun turadi.
 
 export const MOCK_CATEGORIES = [
   { id: 1, name: 'Dvigatel', icon: 'engine', count: 128 },

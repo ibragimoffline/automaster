@@ -1,7 +1,6 @@
 from django.db import models
 from django.db import models
 from apps.masters.models import MasterProfile
-# Create your models here.
 
 class ServiceCategory(models.Model):
     name = models.CharField(max_length=150)

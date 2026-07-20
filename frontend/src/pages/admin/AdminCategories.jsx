@@ -8,13 +8,13 @@ export default function AdminCategories() {
   const [cats, setCats] = useState(null);
   const [name, setName] = useState('');
   const [desc, setDesc] = useState('');
-  const [editing, setEditing] = useState(null); // {id, name, description}
+  const [editing, setEditing] = useState(null);
 
   const load = () => api.adminCategories()
     .then((d) => setCats(Array.isArray(d) ? d : d.results || []))
     .catch(() => { setCats([]); toast.error('Kategoriyalar yuklanmadi'); });
 
-  useEffect(() => { load(); }, []); // eslint-disable-line
+  useEffect(() => { load(); }, []);
 
   const create = async (e) => {
     e.preventDefault();

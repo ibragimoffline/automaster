@@ -13,7 +13,7 @@ export default function AdminReviews() {
     .then((d) => setReviews(Array.isArray(d) ? d : d.results || []))
     .catch(() => { setReviews([]); toast.error('Sharhlar yuklanmadi'); });
 
-  useEffect(() => { load(); }, []); // eslint-disable-line
+  useEffect(() => { load(); }, []);
 
   const remove = async (r) => {
     if (!window.confirm('Sharhni o\'chirasizmi? Usta reytingi qayta hisoblanadi.')) return;
