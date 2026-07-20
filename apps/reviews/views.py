@@ -1,4 +1,3 @@
-from django.db.models import Avg, Count
 from rest_framework import viewsets, exceptions
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
@@ -29,11 +28,3 @@ class ReviewViewSet(viewsets.ModelViewSet):
         if Review.objects.filter(order=order).exists():
             raise exceptions.ValidationError('Bitta buyurtmaga bitta sharh.')
         serializer.save(customer=u, master=order.master)
-        self._recalc_rating(order.master)
-
-    @staticmethod
-    def _recalc_rating(master):
-        agg = master.reviews.aggregate(avg=Avg('rating'), n=Count('id'))
-        master.average_rating = agg['avg'] or 0
-        master.total_reviews = agg['n']
-        master.save(update_fields=['average_rating', 'total_reviews'])
