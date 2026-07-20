@@ -1,4 +1,11 @@
 from rest_framework import serializers
+from django.core.cache import cache
+
+from .cache import (
+    cache_ttl,
+    master_comment_count_key,
+    master_like_count_key,
+)
 from .models import MasterProfile, Workshop
 
 
@@ -25,6 +32,8 @@ class MasterProfileSerializer(serializers.ModelSerializer):
     username = serializers.CharField(source='user.username', read_only=True)
     distance_km = serializers.SerializerMethodField()
     specialties = serializers.SerializerMethodField()
+    like_count = serializers.SerializerMethodField()
+    comment_count = serializers.SerializerMethodField()
 
     class Meta:
         model = MasterProfile
@@ -39,6 +48,8 @@ class MasterProfileSerializer(serializers.ModelSerializer):
             'can_visit_customer',
             'average_rating',
             'total_reviews',
+            'like_count',
+            'comment_count',
             'workshop',
             'distance_km',
             'specialties',
@@ -57,3 +68,23 @@ class MasterProfileSerializer(serializers.ModelSerializer):
                 seen.add(name)
                 out.append(name)
         return out[:3]
+
+    def get_like_count(self, obj):
+        key = master_like_count_key(obj.pk)
+        value = cache.get(key)
+        if value is None:
+            value = getattr(obj, 'like_count_db', None)
+            if value is None:
+                value = obj.likes.count()
+            cache.set(key, value, cache_ttl())
+        return value
+
+    def get_comment_count(self, obj):
+        key = master_comment_count_key(obj.pk)
+        value = cache.get(key)
+        if value is None:
+            value = getattr(obj, 'comment_count_db', None)
+            if value is None:
+                value = obj.reviews.exclude(comment='').count()
+            cache.set(key, value, cache_ttl())
+        return value

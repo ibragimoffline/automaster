@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BadgeCheck, MapPin, Car, Clock } from 'lucide-react';
+import { BadgeCheck, MapPin, Car, Clock, Heart } from 'lucide-react';
 import RatingStars from './RatingStars';
 import { km } from '../lib/format';
 
@@ -36,6 +36,7 @@ export default function MasterCard({ master: m }) {
       <div className="mcard__foot">
         <RatingStars value={m.average_rating} count={m.total_reviews} size={14} />
         <div className="mcard__badges">
+          <span className="badge badge--muted mono"><Heart /> {m.like_count || 0}</span>
           {m.can_visit_customer && (
             <span className="badge badge--visit"><Car /> Chiqib boradi</span>
           )}

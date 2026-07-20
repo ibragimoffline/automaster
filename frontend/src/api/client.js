@@ -86,6 +86,9 @@ export const api = {
     return request(`/masters/nearby/${q ? `?${q}` : ''}`, { auth: false });
   },
   master: (id) => request(`/masters/${id}/`, { auth: false }),
+  masterComments: (id) => request(`/masters/${id}/comments/`, { auth: false }),
+  masterLikeStatus: (id) => request(`/masters/${id}/like/`),
+  toggleMasterLike: (id) => request(`/masters/${id}/like/`, { method: 'POST' }),
 
   categories: () => request('/services/categories/', { auth: false }),
   masterServices: (masterId) =>

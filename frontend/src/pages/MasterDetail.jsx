@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import {
-  BadgeCheck, MapPin, Clock, Car, ArrowLeft, Wrench, Lock, ShieldCheck, ChevronRight,
+  BadgeCheck, MapPin, Clock, Car, ArrowLeft, Wrench, Lock, ShieldCheck, ChevronRight, Heart,
 } from 'lucide-react';
+import { useAuth } from '../auth/AuthContext';
 import RatingStars from '../components/RatingStars';
 import { priceRange, relTime, km } from '../lib/format';
 import { getMockMaster, MOCK_SERVICES, MOCK_REVIEWS } from '../lib/mock';
@@ -11,9 +12,12 @@ import { api } from '../api/client';
 export default function MasterDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { isAuthed } = useAuth();
   const [master, setMaster] = useState(() => getMockMaster(id) || null);
   const [reviews, setReviews] = useState([]);
   const [services, setServices] = useState(MOCK_SERVICES);
+  const [liked, setLiked] = useState(false);
+  const [liking, setLiking] = useState(false);
 
   useEffect(() => {
     api.master(id)
@@ -27,7 +31,7 @@ export default function MasterDetail() {
       })
       .catch(() => setServices(MOCK_SERVICES));
 
-    api.reviews(id)
+    api.masterComments(id)
       .then((data) => {
         const list = Array.isArray(data) ? data : data?.results;
         setReviews(list?.length
@@ -36,6 +40,34 @@ export default function MasterDetail() {
       })
       .catch(() => setReviews(MOCK_REVIEWS));
   }, [id]);
+
+  useEffect(() => {
+    if (!isAuthed) {
+      setLiked(false);
+      return;
+    }
+    api.masterLikeStatus(id)
+      .then((data) => {
+        setLiked(data.liked);
+        setMaster((current) => current ? { ...current, like_count: data.like_count } : current);
+      })
+      .catch(() => setLiked(false));
+  }, [id, isAuthed]);
+
+  async function toggleLike() {
+    if (!isAuthed) {
+      navigate('/login');
+      return;
+    }
+    setLiking(true);
+    try {
+      const data = await api.toggleMasterLike(id);
+      setLiked(data.liked);
+      setMaster((current) => ({ ...current, like_count: data.like_count }));
+    } finally {
+      setLiking(false);
+    }
+  }
 
   if (!master) return <div className="container section">Yuklanmoqda…</div>;
   const ws = master.workshop || {};
@@ -67,6 +99,9 @@ export default function MasterDetail() {
           </div>
           <div className="mhero__cta">
             <Link to={`/orders/new?master=${master.id}`} className="btn btn--lg"><Wrench size={18} /> Buyurtma berish</Link>
+            <button type="button" className="btn btn--ghost" onClick={toggleLike} disabled={liking}>
+              <Heart size={18} fill={liked ? 'currentColor' : 'none'} /> {master.like_count || 0}
+            </button>
             <div className="contact-locked contact-locked--cta">
               <Lock size={15} />
               <span>Aloqa ma'lumotlari buyurtma qabul qilingach ochiladi</span>
@@ -101,7 +136,10 @@ export default function MasterDetail() {
           <section className="block card">
             <div className="block__head">
               <h2 className="block__title">Mijozlar sharhlari</h2>
-              <RatingStars value={master.average_rating} count={master.total_reviews} size={15} />
+              <div className="row" style={{ gap: 12 }}>
+                <span className="mono">{master.comment_count || 0} izoh</span>
+                <RatingStars value={master.average_rating} count={master.total_reviews} size={15} />
+              </div>
             </div>
             <ul className="rev-list">
               {reviews.map((r) => (

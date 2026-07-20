@@ -1,5 +1,6 @@
 
 import pytest
+from django.core.cache import cache
 from rest_framework.test import APIClient
 
 from tests.factories import (
@@ -10,6 +11,11 @@ from tests.factories import (
     ServiceCategoryFactory,
     WorkshopFactory,
 )
+
+
+@pytest.fixture(autouse=True)
+def clear_django_cache():
+    cache.clear()
 
 
 @pytest.fixture

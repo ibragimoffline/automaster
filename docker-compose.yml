@@ -13,6 +13,14 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  redis:
+    image: redis:7.4-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
   web:
     build: .
     command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
@@ -20,8 +28,11 @@ services:
       - .env
     environment:
       DB_HOST: db
+      REDIS_URL: redis://redis:6379/1
     depends_on:
       db:
+        condition: service_healthy
+      redis:
         condition: service_healthy
     volumes:
       - .:/app

@@ -36,3 +36,25 @@ class Workshop(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class MasterLike(models.Model):
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='master_likes'
+    )
+    master = models.ForeignKey(
+        MasterProfile,
+        on_delete=models.CASCADE,
+        related_name='likes'
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=['user', 'master'],
+                name='unique_user_master_like'
+            )
+        ]
