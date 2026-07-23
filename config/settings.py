@@ -96,7 +96,7 @@ CACHE_TTL = config('CACHE_TTL', default=300, cast=int)
 
 CELERY_BROKER_URL = config(
     'CELERY_BROKER_URL',
-    default='redis://127.0.0.1:6379/2',
+    default='amqp://guest:guest@127.0.0.1:5672//',
 )
 CELERY_RESULT_BACKEND = config(
     'CELERY_RESULT_BACKEND',
@@ -109,6 +109,11 @@ CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 300
 CELERY_RESULT_EXPIRES = 3600
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+CELERY_BROKER_HEARTBEAT = config(
+    'CELERY_BROKER_HEARTBEAT',
+    default=30,
+    cast=int,
+)
 
 
 

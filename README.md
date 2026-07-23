@@ -6,6 +6,7 @@ creating repair orders, reviews, and using an admin dashboard.
 ## Stack
 
 - Backend: Django 6, Django REST Framework, Simple JWT, PostgreSQL
+- Async tasks: Celery with RabbitMQ; Redis stores task results and application cache
 - Frontend: React 18, Vite
 - Demo data: `fixtures/initial_data.json`
 
@@ -58,6 +59,26 @@ npm run dev
 ```
 
 Vite dev server proxies API requests to Django at `http://127.0.0.1:8000`.
+
+## Docker and background tasks
+
+Start PostgreSQL, Redis, RabbitMQ, Django, Celery, and the frontend:
+
+```powershell
+docker compose up --build
+```
+
+RabbitMQ is the Celery message broker. Its management UI is available at
+`http://127.0.0.1:15672/`; the default local username and password are both
+`automaster`. Change `RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, and
+`RABBITMQ_DEFAULT_VHOST` in `.env` outside local development.
+
+To run the services without Docker, start RabbitMQ and Redis first, then run the
+Celery worker in a separate terminal:
+
+```powershell
+celery -A config worker --loglevel=info
+```
 
 ## Useful endpoints
 

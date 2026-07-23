@@ -21,6 +21,24 @@ services:
       timeout: 3s
       retries: 10
 
+  rabbitmq:
+    image: rabbitmq:4-management
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER:-automaster}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS:-automaster}
+      RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_DEFAULT_VHOST:-automaster}
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
   web:
     build: .
     command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
@@ -29,12 +47,14 @@ services:
     environment:
       DB_HOST: db
       REDIS_URL: redis://redis:6379/1
-      CELERY_BROKER_URL: redis://redis:6379/2
+      CELERY_BROKER_URL: amqp://${RABBITMQ_DEFAULT_USER:-automaster}:${RABBITMQ_DEFAULT_PASS:-automaster}@rabbitmq:5672/${RABBITMQ_DEFAULT_VHOST:-automaster}
       CELERY_RESULT_BACKEND: redis://redis:6379/3
     depends_on:
       db:
         condition: service_healthy
       redis:
+        condition: service_healthy
+      rabbitmq:
         condition: service_healthy
     volumes:
       - .:/app
@@ -49,12 +69,14 @@ services:
     environment:
       DB_HOST: db
       REDIS_URL: redis://redis:6379/1
-      CELERY_BROKER_URL: redis://redis:6379/2
+      CELERY_BROKER_URL: amqp://${RABBITMQ_DEFAULT_USER:-automaster}:${RABBITMQ_DEFAULT_PASS:-automaster}@rabbitmq:5672/${RABBITMQ_DEFAULT_VHOST:-automaster}
       CELERY_RESULT_BACKEND: redis://redis:6379/3
     depends_on:
       db:
         condition: service_healthy
       redis:
+        condition: service_healthy
+      rabbitmq:
         condition: service_healthy
     volumes:
       - .:/app
@@ -75,4 +97,5 @@ services:
 
 volumes:
   postgres_data:
+  rabbitmq_data:
   frontend_node_modules:
